@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SprihaEduCare_Web</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SprihaEduCare_Web.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="abc header">
+        <nav class="navBar" style="position: relative; top: 0;">
+            <div class="logo" style="display: flex; justify-content: center;align-items: center;">
+                <a class="navbar-brand sprihaLogo" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/assets/images/SprihaLogo1.png" height="75;" alt="Logo"><span style="position:relative; right: 15px;">স্পৃহা এডুকেশন কেয়ার</span> </a>
+
+            </div>
+            <ul id="menuListMain" style="display: flex; margin-bottom: 0px !important;">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AboutSpriha">স্পৃহা কী এবং কেন?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="OurProgram">আমাদের প্রোগ্রামসমূহ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Teachers">শিক্ষকমণ্ডলী</a>
+                </li>
+                @*   <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="EvaluateYourself">স্ব-মূল্যায়ন করো</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AdviceOfSSC">এস.এস.সি. পরীক্ষার পরামর্শ</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AdviceOfHSC">এইচ.এস.সি. পরীক্ষার পরামর্শ</a>
+                </li> *@
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="YourQuestion">তোমার জিজ্ঞাসা</a>
+                </li>
+                @*  @if (Context.User.Identity.IsAuthenticated)
+                {
+                <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Authentication" asp-action="Logout">Logout</a>
+                </li>
+                } *@
+            </ul>
+            @* <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fa fa-bars" style="color: #ad1920;font-size:24px;"></i>
+            </div> *@
+        </nav>
+    </header>
+
+
+    <div class="">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <div class="mfooter" style="box-shadow: inset 0 0 5px 0px #bcbcbc">
+        <div id="sub-footer">
+            <div class="container-fluid">
+                <div class="row">
+                    @* <div class="col-md-5 d-flex align-items-center justify-content-center">
+                    <div class="copyright ">
+                    <p>&copy; Spriha Education care - All Rights Reserved</p>
+                    </div>
+                    </div> *@
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <ul class="social-network d-flex flex-direction-nav fMenu">
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="EvaluateYourself">স্ব-মূল্যায়ন করো</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="AdviceOfSSC">এস.এস.সি. পরীক্ষার পরামর্শ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="AdviceOfHSC">এইচ.এস.সি. পরীক্ষার পরামর্শ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12 d-flex align-items-center justify-content-center">
+                        <div class="logo">
+                            <a class="navbar-brand sprihaLogo1" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/assets/images/SprihaLogo1.png" height="75;" alt="Logo"></a>
+                        </div>
+                        <div style="font-size: 15px;">
+                            <span style="color: #1a73e8;font-weight: 600;">Mobile:</span><span style="color: gray;"> +880 1341-629475 (WhatsApp Available)</span>
+                            <br />
+                            <span style="color: #1a73e8; font-weight: 600;">Location:</span><span style="color: gray;"> Mokhles Plaza (2nd Floor), Savar City Center, Savar, Dhaka - 1340</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

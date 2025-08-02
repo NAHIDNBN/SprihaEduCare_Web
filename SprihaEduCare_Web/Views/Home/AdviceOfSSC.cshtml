@@ -1,5 +1,214 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "Teachers";
 }
+<style>
+    .teacherList {
+        background: linear-gradient(to bottom, rgba(0, 24, 68, 0.4), rgba(188, 188, 188, 0.5));
+        padding: 20px;
+        text-align: center;
+        color: #001844;
+        font-size: 20px;
+        font-weight: 600;
+        /* box-shadow: inset 0px 0px 3px 0px #1a73e8; */
+        /* box-shadow: 0px 3px 3px rgba(119,118,121,.5); */
+        box-shadow: 0px 1px 10px rgba(0,24,68,0.4);
+    }
+
+    .b-gallery.t-theme--light {
+        background-color: #0e0e0e;
+    }
+
+    .b-gallery {
+        align-items: center;
+        background: #e2e6e7;
+        display: flex;
+        margin-bottom: 0;
+        margin-top: 0;
+        overflow: hidden;
+        padding: 150px 0;
+        position: relative;
+    }
+
+    .c-block {
+        margin-bottom: 48px;
+        margin-top: 48px;
+    }
+
+    .b-gallery__lines {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+
+    .l-container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px;
+        padding-left: 24px;
+        padding-right: 24px;
+        width: 100%;
+    }
+
+    .teachersMain {
+    }
+
+    .about-us {
+        background-color: #f9f9f9;
+        padding: 40px 20px;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+        .about-us .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .about-us h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .about-us h3 {
+            margin-top: 30px;
+        }
+
+        .about-us ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            .about-us ul li {
+                padding-left: 1.5em;
+                margin: 0.5em 0;
+                position: relative;
+            }
+
+    .about-spriha {
+        /* background: linear-gradient(to right, #e0f7fa, #e1bee7); */
+        /* background-color: #f1f1f1; */
+        padding: 60px 20px;
+        font-family: 'Segoe UI', sans-serif;
+        color: #333;
+    }
+
+    .container {
+        /* max-width: 900px; */
+        margin: auto;
+        background: white;
+        padding: 40px;
+        border-radius: 0px;
+        /* border: 1px solid #1a73e8 ; */
+        box-shadow: 0 0 10px 0px #bcbcbc;
+        background: linear-gradient(to right, rgba(0, 24, 68, 0.3), rgba(188, 188, 188, 0.5));
+    }
+
+    .about-spriha h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        color: #1a73e8;
+    }
+
+    .about-spriha h3 {
+        color: #001844;
+        margin-top: 30px;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    .about-spriha p {
+        font-size: 1.05rem;
+        line-height: 1.8;
+        margin-bottom: 15px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .about-spriha ul {
+        padding-left: 20px;
+        margin-bottom: 15px;
+    }
+
+        .about-spriha ul li {
+            margin-bottom: 8px;
+        }
+
+    @@media (max-width: 768px) {
+        .about-spriha h2 {
+            font-size: 2rem;
+        }
+
+        .container {
+            padding: 25px;
+        }
+    }
+
+    @@keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @@media (max-width: 768px) {
+        .about-container {
+            padding: 30px 20px;
+        }
+
+        .about-content h2 {
+            font-size: 2rem;
+        }
+    }
+</style>
+
+<section class="teachersMain">
+    <div class="title teacherList col-md-12" style="font-family: cursive;">নবম-দশম শ্রেণি</div>
+</section>
+
+
+
+<section class="about-spriha">
+    <div class="container">
+        @* <h2>স্পৃহা কী ও কেন</h2> *@
+
+        <div class="section">
+            <h3>বেসিক শক্ত করার কৌশল ও মানসিকতা:</h3>
+            <p>
+                <strong>নবম ও দশম শ্রেণি</strong> হলো সেই ধাপ যেখানে একজন শিক্ষার্থীর শিক্ষাজীবনের ভিত্তি স্থাপন হয়। এই সময়টাকে কেউ কেউ বোর্ড পরীক্ষার প্রস্তুতির সূচনা হিসেবে দেখে, আবার কেউ ভাবে এটি হালকা বা সামান্য গুরুত্বের সময়কাল। কিন্তু বাস্তবতা হলো—এই দুটো বছর এমন একটি মঞ্চ, যেখানে পরবর্তী উচ্চশিক্ষা এবং ভবিষ্যৎ লক্ষ্য অর্জনের রূপরেখা তৈরি হয়।
+            </p>
+        </div>
+        <div class="section">
+            <h3>বেসিক ক্লিয়ার হওয়ার ধারণা:</h3>
+            <p>
+                প্রথমত, ‘বেসিক ক্লিয়ার’ হওয়া বলতে আমরা কী বুঝি তা ঠিকভাবে উপলব্ধি করতে হবে। অধিকাংশ শিক্ষার্থী মনে করে বেসিক মানেই কিছু নিয়ম মুখস্থ করা, কিন্তু বাস্তবে বেসিক মানে হচ্ছে বিষয়ভিত্তিক ধারণা বা কনসেপ্টকে জেনেই শেখা। গণিতে সংখ্যাবোধ, ভগ্নাংশ, সরল-জটিল সংখ্যা, বীজগণিতের রাশি, সরল সমীকরণ, বর্গমূল ইত্যাদি যত বেশি বোঝা যাবে, ততটাই ভবিষ্যতে উচ্চতর গণিত সহজ হবে। পদার্থবিজ্ঞানে বল, গতিবিদ্যা বা শক্তি নিয়ে যে চিন্তাভাবনা নবম শ্রেণিতে শুরু হয়, সেটাই একদিন ইঞ্জিনিয়ারিং ফিজিক্সে পৌঁছায়। রসায়নে পদার্থের গঠন, পরমাণু, মৌলিক ধারণাগুলো বুঝে শেখার অভ্যাস তৈরি না করলে পরে এগিয়ে যাওয়া কষ্টসাধ্য হয়ে পড়ে।
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>কীভাবে বেসিক শক্ত করবে:</h3>
+            <p>
+                প্রতিটি অধ্যায় পড়ার সময় শুধু ‘কি লেখা আছে’ তা পড়বে না, বরং ‘কেন এটা বলা হয়েছে’, ‘এর বাস্তব প্রয়োগ কী’, এমন প্রশ্ন নিজের কাছে রাখ। নিজে নিজে বোঝার চেষ্টা করো। যেকোনো টপিক পড়ে সেটা কারো সামনে নিজের ভাষায় বোঝানোর চেষ্টা করো। এতে করে বোঝার গভীরতা বাড়বে। প্রতিদিন অল্প সময় ধরে হলেও রিভিশন করো। প্রতিদিন ৩০ মিনিটের ধারাবাহিক রিভিশন, সপ্তাহ শেষে ৫ ঘণ্টা পড়ার চেয়ে অনেক বেশি কার্যকর। ভুলকে শেখার সুযোগ হিসেবে দেখো। পরীক্ষায় ভুল হলে হতাশ না হয়ে বুঝে নাও, কোন জায়গায় বোঝার ঘাটতি ছিল। ICT ও ইংরেজির ক্ষেত্রে শুধু বইয়ের পড়া নয়, অনুশীলন সবচেয়ে গুরুত্বপূর্ণ। নিজের হাতে টাইপ করে প্র্যাকটিস করো, ইংরেজি নিউজ পড়ো বা YouTube ভিডিও দেখো।
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>মনোভাব ও দৈনন্দিন অভ্যাস:</h3>
+            <p>
+                নিজের তুলনা অন্য কারো সঙ্গে কোরো না। তুমি যতদিন আগের নিজের চেয়ে একটু ভালো হচ্ছো, তুমি ঠিক পথেই আছো। টেকনোলজির ব্যবহার হোক শেখার জন্য, সময় নষ্ট করার জন্য নয়। পড়াশোনার জন্য YouTube, Khan Academy, Desmos ইত্যাদি প্ল্যাটফর্ম ব্যবহার করতে শেখো। যে বিষয়ে দুর্বল, সেটাকেই গুরুত্ব দাও। সহজ বিষয় পড়ে আত্মবিশ্বাস পাওয়া ভালো, কিন্তু দুর্বল বিষয় ফেলে রাখলে পরে অনেক ক্ষতি হতে পারে। প্রতিদিন পর্যাপ্ত ঘুম নাও, অন্তত ৭–৮ ঘণ্টা। ঘুম ঠিক না হলে মনোযোগ, মুড, এমনকি স্মৃতিশক্তিও ক্ষতিগ্রস্ত হয়। পুষ্টিকর খাবার খাও—ফল, শাকসবজি, ডিম, দুধ ইত্যাদি। ভালো খাওয়াদাওয়া তোমার পড়ার মানসিকতাকেও উন্নত করবে। নিজের পড়ার পরিবেশ, রুম আর শরীর পরিচ্ছন্ন রাখো। এটা মন ভালো রাখতে সাহায্য করে। খেলাধুলা করো, হাঁটো, হালকা ব্যায়াম করো—শরীর ফিট থাকলে মনও ফ্রেশ থাকবে। অতিরিক্ত চিন্তা বা স্ট্রেস থেকে নিজেকে দূরে রাখো। সবকিছু পারফেক্ট না হলেও চলবে, প্রতিদিন একটু একটু করে শেখাটাই গুরুত্বপূর্ণ।
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>শেষ কথা:</h3>
+            <p>
+                সবচেয়ে বড় কথা, এই দুই বছরই তোমাকে শেখাবে—কীভাবে পড়াশোনার প্রতি আন্তরিক হতে হয়, কীভাবে নিজের সীমাবদ্ধতা অতিক্রম করতে হয়। যারা নবম-দশম শ্রেণিতে নিজের ভিত্তি শক্ত করতে পারে, ভবিষ্যতের কঠিন বিষয়গুলো তাদের জন্য অনেকটাই সহজ হয়ে যায়। তাই শুরু হোক এখান থেকেই—ধৈর্য, কৌশল আর আত্মবিশ্বাস নিয়ে।
+            </p>
+        </div>
+
+    </div>
+</section>

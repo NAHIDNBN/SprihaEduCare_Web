@@ -1,5 +1,228 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "Teachers";
 }
+<style>
+    .teacherList {
+        background: linear-gradient(to bottom, rgba(0, 24, 68, 0.4), rgba(188, 188, 188, 0.5));
+        padding: 20px;
+        text-align: center;
+        color: #001844;
+        font-size: 20px;
+        font-weight: 600;
+        /* box-shadow: inset 0px 0px 3px 0px #1a73e8; */
+        /* box-shadow: 0px 3px 3px rgba(119,118,121,.5); */
+        box-shadow: 0px 1px 10px rgba(0,24,68,0.4);
+    }
+
+    .b-gallery.t-theme--light {
+        background-color: #0e0e0e;
+    }
+
+    .b-gallery {
+        align-items: center;
+        background: #e2e6e7;
+        display: flex;
+        margin-bottom: 0;
+        margin-top: 0;
+        overflow: hidden;
+        padding: 150px 0;
+        position: relative;
+    }
+
+    .c-block {
+        margin-bottom: 48px;
+        margin-top: 48px;
+    }
+
+    .b-gallery__lines {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+
+    .l-container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px;
+        padding-left: 24px;
+        padding-right: 24px;
+        width: 100%;
+    }
+
+    .teachersMain {
+    }
+
+    .about-us {
+        background-color: #f9f9f9;
+        padding: 40px 20px;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+        .about-us .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .about-us h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .about-us h3 {
+            margin-top: 30px;
+        }
+
+        .about-us ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            .about-us ul li {
+                padding-left: 1.5em;
+                margin: 0.5em 0;
+                position: relative;
+            }
+
+    .about-spriha {
+        /* background: linear-gradient(to right, #e0f7fa, #e1bee7); */
+        /* background-color: #f1f1f1; */
+        padding: 60px 20px;
+        font-family: 'Segoe UI', sans-serif;
+        color: #333;
+    }
+
+    .container {
+        /* max-width: 900px; */
+        margin: auto;
+        background: white;
+        padding: 40px;
+        border-radius: 0px;
+        /* border: 1px solid #1a73e8 ; */
+        box-shadow: 0 0 10px 0px #bcbcbc;
+        background: linear-gradient(to right, rgba(0, 24, 68, 0.3), rgba(188, 188, 188, 0.5));
+    }
+
+    .about-spriha h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        color: #1a73e8;
+    }
+
+    .about-spriha h3 {
+        color: #001844;
+        margin-top: 30px;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    .about-spriha p {
+        font-size: 1.05rem;
+        line-height: 1.8;
+        margin-bottom: 15px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .about-spriha ul {
+        padding-left: 20px;
+        margin-bottom: 15px;
+    }
+
+        .about-spriha ul li {
+            margin-bottom: 8px;
+        }
+
+    @@media (max-width: 768px) {
+        .about-spriha h2 {
+            font-size: 2rem;
+        }
+
+        .container {
+            padding: 25px;
+        }
+    }
+
+    @@keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @@media (max-width: 768px) {
+        .about-container {
+            padding: 30px 20px;
+        }
+
+        .about-content h2 {
+            font-size: 2rem;
+        }
+    }
+</style>
+
+<section class="teachersMain">
+    <div class="title teacherList col-md-12" style="font-family: cursive;">একাদশ-দ্বাদশ শ্রেণি:</div>
+</section>
+
+
+
+<section class="about-spriha">
+    <div class="container">
+        <div class="section">
+            <h3>ভবিষ্যৎ গঠনের দায়িত্বশীল প্রস্তুতি</h3>
+            <p>
+                একাদশ ও দ্বাদশ শ্রেণি হলো শিক্ষাজীবনের সবচেয়ে গুরুত্বপূর্ণ সময়। এই সময়ে তুমি কেবল একটি বোর্ড পরীক্ষার জন্য প্রস্তুতি নিচ্ছো না—তুমি প্রস্তুতি নিচ্ছো জীবনের এক নতুন অধ্যায়ের জন্য। এই সময়ের পড়াশোনা যেমন গভীর ও বিশ্লেষণমূলক, তেমনি এটি তোমার চিন্তাভাবনা, আত্মনির্ভরতা এবং লক্ষ্য নির্ধারণের সক্ষমতাকেও গঠন করে।
+            </p>
+            <p>
+                এই দুই বছরে তোমার প্রধান কাজ তিনটি—
+                ১) বিষয়ভিত্তিক বেসিক ক্লিয়ার করা
+                ২) নিজস্ব পড়াশোনার রুটিন তৈরি ও তা অনুসরণ করা
+                ৩) ভবিষ্যতের লক্ষ্য বা ক্যারিয়ার দিক নির্ধারণ করা
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>বেসিক ক্লিয়ার করার কৌশল</h3>
+            <p>
+                এই পর্যায়ে এসে মুখস্থনির্ভরতা থেকে বেরিয়ে ভাবনাভিত্তিক শেখার দিকে এগিয়ে যেতে হবে। গণিতে ইন্টিগ্রাল, ডিফারেনশিয়াল, ভেক্টর—এসব যদি বোঝো না, তাহলে ছোট ছোট অংশে ভেঙে নিয়মিত চর্চা করো। পদার্থবিজ্ঞানে তড়িৎ ও চুম্বকত্ব, গতির সমীকরণ, নিউটনের সূত্র—এসব কনসেপ্ট না বুঝে মুখস্থ করলে এগিয়ে যাওয়া কঠিন। জীববিজ্ঞানে ছবি দেখে ও নিজে অঙ্কন করে শেখো—এটাই বেশি কার্যকর।
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>পড়াশোনার রুটিন ও আত্মশৃঙ্খলা</h3>
+            <p>
+                দিনে কত ঘণ্টা পড়লে হবে না—যে সময়টা পড়ছো, সেটি মনোযোগ দিয়ে পড়ছো কি না সেটাই গুরুত্বপূর্ণ। Pomodoro Technique অনুসরণ করে দিনে কয়েকবার ছোট ছোট সময়ে পড়ো। প্রতিদিন অন্তত একটি কঠিন বিষয় চর্চা করো। সপ্তাহে একদিন নিজেকে প্রশ্ন করো—গত সপ্তাহে নতুন কী শিখলে?
+            </p>
+            <p>
+                পাশাপাশি খেয়াল রাখো:
+                প্রতিদিন পর্যাপ্ত ঘুম নেওয়া অত্যন্ত জরুরি—রাত জেগে পড়ে শরীর খারাপ করো না।
+                নিয়মিত খেলাধুলা বা শরীরচর্চা করো। মন ফ্রেশ থাকলে পড়া আরও ভালোভাবে হবে।
+                পুষ্টিকর খাবার খাও—দুধ, ডিম, ফলমূল, বাদাম। Junk food যতটা সম্ভব কমাও।
+                নিজের রুম, পড়ার জায়গা ও শরীর পরিচ্ছন্ন রাখো। অগোছালো পরিবেশ মনোযোগ কমায়।
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>লক্ষ্য নির্ধারণ ও মানসিক প্রস্তুতি</h3>
+            <p>
+                তুমি কি মেডিকেলে যেতে চাও? ইঞ্জিনিয়ার হতে? নাকি সাংবাদিক, শিক্ষক বা ব্যবসায়ী? নিজের আগ্রহ ও বাস্তবতা মিলিয়ে লক্ষ্য নির্ধারণ করো। মনে রেখো, অন্য কেউ নয়, তুমি নিজেই ঠিক করবে তুমি কী হতে চাও।
+            </p>
+            <p>
+                অতিরিক্ত দুশ্চিন্তা বাদ দাও। পড়ালেখা নিয়ে চাপ থাকবে, কিন্তু সেটা যেন তোমাকে ভেঙে না ফেলে। ভুল থেকে শেখো—ভুল করলেই তুমি ব্যর্থ না, বরং শেখার আরও একটা সুযোগ পাচ্ছো।
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>শেষ কথা</h3>
+            <p>
+                এই দুই বছর এমনভাবে কাজে লাগাও যেন ভবিষ্যতে নিজেকে নিয়ে গর্ব করতে পারো। সফলতা কেবল রেজাল্টে নয়, প্রস্তুতির প্রতিটি ধাপে লুকিয়ে থাকে। তুমি যদি বুঝে পড়ো, খেয়াল রাখো নিজের শরীর-মন, আর লক্ষ্য ঠিক রেখে এগিয়ে যাও—তবে পথ ঠিকই খুলে যাবে তোমার জন্য।
+            </p>
+        </div>
+    </div>
+</section>

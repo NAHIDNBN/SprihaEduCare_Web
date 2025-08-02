@@ -2,63 +2,347 @@
     ViewData["Title"] = "Home Page";
 }
 <style>
-    .hero{
-        height: 450px;
+    .hero {
+        height: 65vh;
         display: flex;
+        /* background: linear-gradient(to bottom right, rgba(26, 115, 232, 0.4), rgba(255, 255, 255, 0.2)); */
+        /* background: linear-gradient(to right, #001844, #3b5998); */
         /* padding: 10px; */
     }
-    .slideShow{
-        width: 60%;
+
+    .slideShow {
+        width: 70%;
         height: 100%;
+        /* box-shadow: inset 0 0 100px 10px #001844; */
+        /* padding: 5rem 10rem; */
+        /*  padding-block: calc(.25rem*12);
+            padding-inline: calc(.25rem*4); */
     }
-    .admissionForm{
-        width: 40%;
+
+    .admissionForm {
+        width: 30%;
         padding: 20px;
         /* border: 1px solid #bcbcbc; */
         display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow: inset 0 0 5px 0px #1a73e8;
+        /* box-shadow: inset 0 0 5px 0px #1a73e8; */
+        box-shadow: inset 0 0 100px 10px #001844;
+        background: #075965;
     }
 
-    .admissionFromInner{
+    .admissionFromInner {
         width: 100%;
     }
-        .carousel,
-        .carousel-inner,
-        .carousel-item,
-        .carousel-item img {
-            height: 100%;
-            object-fit: cover;
-        }
+
+    .carousel,
+    .carousel-inner,
+    .carousel-item,
+    .carousel-item img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    .carouselExampleIndicators {
+    }
     /* .mfooter {
-        position: fixed;
-        bottom: 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        } */
+
+
+    /* body {
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background: #f0f0f0;
+        }
+
+        .container {
+          position: relative;
+          width: 100vw;
+          height: 100vh;
+        }
+
+        .img {
+          position: absolute;
+          transition: all 0.3s ease;
+          cursor: grab;
+        }
+
+        .img1 {
+          top: 50px;
+          left: 100px;
+          height: 100px;
+          width: 100px;
+          transform: rotate(15deg);
+        }
+
+        .img2 {
+          top: 200px;
+          left: 300px;
+            height: 100px;
+          width: 100px;
+          transform: rotate(-20deg);
+        }
+
+        .img3 {
+          top: 400px;
+          left: 150px;
+            height: 100px;
+          width: 100px;
+          transform: rotate(5deg);
+        }
+
+        .img4 {
+          top: 100px;
+          left: 600px;
+          height: 100px;
+          width: 100px;
+          transform: rotate(-10deg);
+        }
+
+        .img5 {
+          top: 350px;
+          left: 450px;
+          height: 100px;
+          width: 100px;
+          transform: rotate(25deg);
+        } */
+
+
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: #fafafa;
+        font-family: Arial, sans-serif;
+    }
+
+    .wrapper {
+        position: relative;
         width: 100%;
-    } */
+        height: 80vh;
+        padding: 50px;
+        box-sizing: border-box;
+        background-color: #f1f1f1;
+    }
+
+    .text {
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        max-width: 600px;
+        height: 100px;
+        color: white;
+        text-align: center;
+    }
+
+    .image {
+        position: absolute;
+        z-index: 1;
+        opacity: 0.9;
+    }
+
+    .img1 {
+        top: 5%;
+        left: 2%;
+        height: 100px;
+        width: 160px;
+        /* transform: rotate(-15deg); */
+    }
+
+    .img2 {
+        top: 10%;
+        left: 16%;
+        height: 100px;
+        width: 160px;
+        /* transform: rotate(10deg); */
+    }
+
+    .img3 {
+        top: 5%;
+        left: 30%;
+        height: 100px;
+        width: 160px;
+        /* transform: rotate(5deg); */
+    }
+
+    .img4 {
+        top: 10%;
+        left: 44%;
+        height: 100px;
+        width: 160px;
+        /* transform: rotate(-20deg); */
+    }
+
+    .img5 {
+        top: 5%;
+        right: 30%;
+        height: 100px;
+        width: 160px;
+        /* transform: rotate(-20deg); */
+    }
+
+    .img6 {
+        top: 10%;
+        right: 16%;
+        height: 100px;
+        width: 160px;
+        /* transform: rotate(-20deg); */
+    }
+
+    .img15 {
+        top: 5%;
+        right: 2%;
+        height: 100px;
+        width: 160px;
+    }
+
+    .img7 {
+        top: calc(50% - 60px);
+        left: 10%;
+        height: 100px;
+        width: 160px;
+        /* transform: rotate(-20deg); */
+    }
+
+    .img8 {
+        top: calc(50% - 60px);
+        right: 10%;
+        height: 100px;
+        width: 160px;
+        /* transform: rotate(-20deg); */
+    }
+
+    .img9 {
+        bottom: 5%;
+        left: 2%;
+        height: 100px;
+        width: 160px;
+        /* transform: rotate(-20deg); */
+    }
+
+    .img10 {
+        bottom: 10%;
+        left: 16%;
+        height: 100px;
+        width: 160px;
+        /* transform: rotate(-20deg); */
+    }
+
+    .img11 {
+        bottom: 5%;
+        left: 30%;
+        height: 100px;
+        width: 160px;
+        /* transform: rotate(-20deg); */
+    }
+
+    .img12 {
+        bottom: 10%;
+        left: 44%;
+        height: 100px;
+        width: 160px;
+        /* transform: rotate(-20deg); */
+    }
+
+    .img13 {
+        bottom: 5%;
+        right: 30%;
+        height: 100px;
+        width: 160px;
+        /* transform: rotate(-20deg); */
+    }
+
+    .img14 {
+        bottom: 10%;
+        right: 16%;
+        height: 100px;
+        width: 160px;
+        /* transform: rotate(-20deg); */
+    }
+
+    /* .img15 {
+            bottom: 10%;
+            right: 35%;
+            height: 100px;
+            width: 160px;
+        } */
+
+    .img16 {
+        bottom: 5%;
+        right: 2%;
+        height: 100px;
+        width: 160px;
+    }
+
+    /* .img17 {
+            bottom: 50px;
+            right: 5%;
+            height: 100px;
+            width: 160px;
+        }
+
+        .img18 {
+            bottom: 50px;
+            right: 5%;
+            height: 100px;
+            width: 160px;
+        } */
+
+
+
+
+    .image img {
+        width: 100%;
+        /* height: auto; */
+        /* border-radius: 8px; */
+        /* box-shadow: 0 2px 6px 0px #bcbcbc; */
+    }
+
+    .carousel, .carousel-inner, .carousel-item, .carousel-item img {
+        object-fit: inherit;
+        /* box-shadow: 0 4px 12px rgba(26, 115, 232, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1); */
+        /* border-radius: 25px; */
+    }
+
+
+    .glass-card {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 2rem;
+        width: 300px;
+        color: white;
+    }
 </style>
 
-<section class="hero mt-1">
-    <div class="slideShow">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+<section class="hero">
+    <div class="slideShow" style="position: relative;">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="~/assets/images/classNineSecion.png" class="d-block w-100 h-100" alt="...">
+                    <img src="~/assets/images/Sub 01 (PC).jpg" class="d-block w-100 h-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="~/assets/images/classTenSection.png" class="d-block w-100 h-100" alt="...">
+                    <img src="~/assets/images/Sub 02 (PC).jpg" class="d-block w-100 h-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="~/assets/images/classElevenSection.png" class="d-block w-100 h-100" alt="...">
+                    <img src="~/assets/images/Sub 03 (PC).jpg" class="d-block w-100 h-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="~/assets/images/classTwelveSection.png" class="d-block w-100 h-100" alt="...">
+                    <img src="~/assets/images/Sub 04 (PC).jpg" class="d-block w-100 h-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -70,56 +354,94 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+
+        <div class="overlay">
+        </div>
     </div>
     <div class="admissionForm">
         <div class="admissionFromInner">
+
+            <h2 style="color: white;text-align: center;margin-bottom: 2rem;">
+                ফ্রি ক্লাসের জন্য আবেদন
+            </h2>
+
             <form method="post" action="ContactUs">
+                <div style="border: 1px solid #bcbcbc;">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="userName" placeholder="Name">
+                        <span class="warning"></span>
 
-                <div class="mb-2 form-floating">
-                    <input type="text" class="form-control" id="userName" placeholder="Name">
-                    <span class="warning"></span>
-                    @* <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"> *@
-                    <label for="floatingInput">শিক্ষার্থীর নাম:</label>
-                </div>
-                <div class="mb-2 form-floating">
-                    <input type="tel" class="form-control" id="phoneNumber" placeholder="Mobile">
-                    <span class="warning"></span>
-                    @*  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"> *@
-                    <label for="floatingInput">মোবাইল নম্বর:</label>
-                </div>
-                <div class="form-floating mb-2">
-                    <input type="email" class="form-control" id="userEmail" placeholder="email@example.com">
-                    <span class="warning"></span>
+                        <label for="floatingInput">শিক্ষার্থীর নাম:</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="tel" class="form-control" id="phoneNumber" placeholder="Mobile">
+                        <span class="warning"></span>
+                        <label for="floatingInput">মোবাইল নম্বর:</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="userEmail" placeholder="email@example.com">
+                        <span class="warning"></span>
 
-                    <label for="floatingInput">পিতা/মাতার নাম:</label>
-                </div>
-                <div class="form-floating mb-2">
-                    <input type="email" class="form-control" id="userEmail" placeholder="email@example.com">
-                    <span class="warning"></span>
+                        <label for="floatingInput">পিতা/মাতার নাম:</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="userEmail" placeholder="email@example.com">
+                        <span class="warning"></span>
 
-                    <label for="floatingInput">ঠিকানা:</label>
-                </div>
-                <div class="form-floating mb-2">
-                    <input type="email" class="form-control" id="userEmail" placeholder="email@example.com">
-                    <span class="warning"></span>
+                        <label for="floatingInput">ঠিকানা:</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="userEmail" placeholder="email@example.com">
+                        <span class="warning"></span>
 
-                    <label for="floatingInput">স্কুল/কলেজের নাম:</label>
-                </div>
-                <div class="form-floating mb-2">
-                    <input type="email" class="form-control" id="userEmail" placeholder="email@example.com">
-                    <span class="warning"></span>
+                        <label for="floatingInput">স্কুল/কলেজের নাম:</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="userEmail" placeholder="email@example.com">
+                        <span class="warning"></span>
 
-                    <label for="floatingInput">ইমেইল আইডি:</label>
+                        <label for="floatingInput">ইমেইল আইডি:</label>
+                    </div>
                 </div>
-                @* <div class="form-floating mb-2">
-                <textarea class="form-control contactUs-comment"  placeholder="Leave a comment here" id="userComments"></textarea>
-                <span  class="warning"></span>
 
-                <label for="floatingTextarea">Comments</label>
-                </div> *@
-                <button type="submit" class="submitBtn" onclick="saveScrollPosition()">সাবমিট </button>
+
+                <button type="submit" class="submitBtn mt-4" onclick="saveScrollPosition()">সাবমিট </button>
             </form>
 
+        </div>
+    </div>
+
+</section>
+
+
+
+<section class="teachers">
+    <div class="wrapper">
+        <div class="image img1"><img src="~/assets/images/10. Sabit Al Sami.jpg" class="img img1"></div>
+        <div class="image img2"><img src="~/assets/images/11. Arish.jpeg" class="img img2"></div>
+        <div class="image img3"><img src="~/assets/images/12. Fahim.jpeg" class="img img3"></div>
+        <div class="image img4"><img src="~/assets/images/13. Suhanur.jpeg" class="img img4"></div>
+        <div class="image img5"><img src="~/assets/images/14. Shupto.jpeg" class="img img5"></div>
+        <div class="image img6"><img src="~/assets/images/15. Shoeb.jpeg" class="img img6"></div>
+        <div class="image img7"><img src="~/assets/images/16. Mynurdoza.jpg" class="img img7"></div>
+        <div class="image img8"><img src="~/assets/images/17. Sazzad.jpeg" class="img img8"></div>
+        <div class="image img9"><img src="~/assets/images/18. Shadhin.jpeg" class="img img9"></div>
+        <div class="image img10"><img src="~/assets/images/19. Jihad.jpeg" class="img img10"></div>
+        <div class="image img11"><img src="~/assets/images/2. Aribullah.jpeg" class="img img11"></div>
+        <div class="image img12"><img src="~/assets/images/20. Arpon.jpeg" class="img img12"></div>
+        <div class="image img13"><img src="~/assets/images/21. Kawsar.jpeg" class="img img13"></div>
+        <div class="image img14"><img src="~/assets/images/22. Jisan.jpeg" class="img img14"></div>
+        <div class="image img15"><img src="~/assets/images/23. Choton.jpeg" class="img img15"></div>
+        <div class="image img16"><img src="~/assets/images/24. Radhik.jpeg" class="img img16"></div>
+        <!-- <div class="image img15"><img src="image2.jpg" class="img img17"></div>
+        <div class="image img16"><img src="image3.jpg" class="img img18"></div> -->
+
+        <div class="text">
+            <h1 style="color: #001844;">আমাদের সম্মানিত শিক্ষক মণ্ডলী</h1>
+           @*  <p>
+                This paragraph sits in the middle while images are placed randomly around it.
+                You can imagine a creative layout for an art portfolio, fashion blog, or even a scrapbook.
+            </p> *@
         </div>
     </div>
 </section>

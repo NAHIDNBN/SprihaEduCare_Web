@@ -29,7 +29,7 @@ html {
 }
 
 body {
-    margin-bottom: 60px;
+    /*margin-bottom: 60px;*/
 }
 
 .navBar {
@@ -37,16 +37,20 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 85px;
+    height: auto;
     display: flex;
     justify-content: space-between;
-    padding: 5px 50px;
+    padding: 0px 50px;
     z-index: 3;
     font-size: 17px;
     font-family: 'Cambria Math';
-    background-color: white;
+    background-color: #001844;
     /*border-bottom: 2px solid #bcbcbc;*/
-    box-shadow: inset 0px 0px 10px 0px #bcbcbc;
+    /*box-shadow: inset 0px 0px 10px 0px #bcbcbc;*/
+}
+
+.navbar-brand {
+    padding: 0px;
 }
 
 .container-fluid {
@@ -54,7 +58,7 @@ body {
 }
 
 .navBar a {
-    color: gray !important;
+    color: #f1f1f1 !important;
     font-weight: 600;
     font-size: 15px;
 }
@@ -90,7 +94,7 @@ li.nav-item {
 }
 
     .sprihaLogo img {
-        height: 125px;
+        height: 110px;
         width: 150px;
         /*position: relative;
         bottom: 25px;*/
@@ -116,10 +120,10 @@ li.nav-item {
 }
 
 .slideShow {
-    width: 60%;
-    padding: 10px;
+    /*width: 60%;*/
+    /*padding: 10px;*/
     /*border: 1px solid #1a73e8;*/
-    box-shadow: inset 0 0 5px 0 #1a73e8;
+    /*box-shadow: inset 0 0 5px 0 #1a73e8;*/
 }
 
 .form {
@@ -151,10 +155,10 @@ img {
     color: white;
     font-size: 17px;
     font-weight: 500;
-    background-color: #1a73e8;
+    background-color: #9b7537;
     opacity: 0.8;
-    border: 1px solid #bcbcbc;
-    border-radius: 5px;
+    border: 1px solid #9b7537;
+    /*border-radius: 5px;*/
     padding: 8px;
     font-family: cursive;
 }
@@ -167,7 +171,8 @@ img {
 
 .form-floating > .form-control {
     padding: 10px;
-    border: 1px solid #1a73e8;
+    border: 1px solid #bcbcbc;
+    color: gray;
 }
 
     .form-floating > .form-control:focus {
@@ -178,7 +183,7 @@ img {
 
 .form-floating {
     height: 45px;
-    margin-bottom: 0.5rem;
+    /*margin-bottom: 0.5rem;*/
 }
 
     .form-floating > label {
@@ -191,14 +196,16 @@ img {
         height: 100%;
         padding: 0.25rem 0.5rem;
         box-sizing: border-box;
+        border-radius: 0px;
     }
 
 #sub-footer {
     padding: 10px 0px;
+    background: #001844;
 }
 
 .executiveCommiteeMain {
-    padding: 20px 20%;
+    padding: 5rem 2rem;
     /*background-color: #f1f1f1;*/
 }
 
@@ -258,4 +265,16 @@ img {
 .fMenu a {
     font-weight: 600;
     font-size: 15px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 500px 0px #001844;
+    /*background-image: linear-gradient(to bottom, rgba(0, 59, 114, 0.2) 0%, rgba(0, 14, 28, 0.3) 100%);*/
+    /*background: linear-gradient(to top, rgba(0, 24, 68, 0.7), rgba(0, 24, 68, 0.3));*/
+    /*z-index: 2;*/
 }

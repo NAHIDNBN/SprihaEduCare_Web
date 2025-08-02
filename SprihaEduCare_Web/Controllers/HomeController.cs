@@ -21,7 +21,7 @@ namespace SprihaEduCare_Web.Controllers
         {
             return View();
         }
-        public IActionResult OurProgram()
+        public IActionResult Programs()
         {
             return View();
         }
@@ -41,11 +41,19 @@ namespace SprihaEduCare_Web.Controllers
         {
             return View();
         }
-        public IActionResult YourQuestion()
+        public IActionResult Questions()
         {
             return View();
         }
         public IActionResult Privacy()
+        {
+            return View();
+        }
+        public IActionResult Suggestions()
+        {
+            return View();
+        }
+        public IActionResult QuickTest()
         {
             return View();
         }

@@ -1,0 +1,479 @@
+﻿@{
+    ViewData["Title"] = "Teachers";
+}
+<style>
+    .teacherList {
+        background: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+        color: #001844;
+        font-size: 20px;
+        font-weight: 600;
+        /* box-shadow: inset 0px 0px 3px 0px #1a73e8; */
+        box-shadow: 2px 3px 3px rgba(119,118,121,.25);
+    }
+
+    .b-gallery.t-theme--light {
+        background-color: #0e0e0e;
+    }
+
+    .b-gallery {
+        align-items: center;
+        background: #e2e6e7;
+        display: flex;
+        margin-bottom: 0;
+        margin-top: 0;
+        overflow: hidden;
+        padding: 150px 0;
+        position: relative;
+    }
+
+    .c-block {
+        margin-bottom: 48px;
+        margin-top: 48px;
+    }
+
+    .b-gallery__lines {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+
+    .l-container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px;
+        padding-left: 24px;
+        padding-right: 24px;
+        width: 100%;
+    }
+
+    .teachersMain {
+    }
+
+    .headerColor {
+        background-color: #001844;
+        height: 100px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        position: relative;
+    }
+
+    .card {
+        height: 450px;
+        border-radius: 15px;
+    }
+
+    .teacherDetails {
+        padding: 0 20px 30px;
+    }
+
+    .teacherImgBorder1 {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        border: 5px solid #f1f1f1;
+        /* position: absolute; */
+        /* top: 40px; */
+    }
+
+    .roundImg {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        border-radius: 50%;
+        display: block;
+    }
+
+    .teacherName {
+        text-align: center;
+    }
+
+        .teacherName h2 {
+            font-size: 20px !important;
+            color: #001844;
+            font-weight: 600;
+        }
+
+    .subjectName h2 {
+        font-size: 17px !important;
+        color: gray;
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+
+    .roundedBg {
+        border-radius: 25px;
+        background: linear-gradient(to right, rgba(0, 24, 68, 0.2), rgba(255, 255, 255, 1));
+        padding: 10px 20px 5px;
+        border: 1px solid #f1f1f1;
+    }
+
+    .aboutTeacher h2 {
+        font-size: 15px !important;
+        color: gray;
+        font-weight: 600;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+</style>
+
+
+<section class="teachersMain">
+    <div class="title teacherList col-md-12" style="font-family: cursive;">শিক্ষকদের তালিকা:</div>
+</section>
+
+
+<div class="executiveCommiteeMain container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="headerColor"></div>
+                <div class="d-flex justify-content-center mb-3" style="margin-top: -60px; z-index: 999;">
+                    <div class="teacherImgBorder1">
+                        <img class="roundImg" src="~/assets/images/2. Aribullah.jpeg" height="100%;" width="100%;" alt="Logo">
+
+                        @* <div class="teacherImgBorder2">
+                        </div> *@
+                    </div>
+                </div>
+
+                <div class="teacherDetails">
+                    <div class="teacherName">
+                        <h2>মোঃ আরিবুল্লাহ খান</h2>
+                    </div>
+                    <div class="subjectName d-flex justify-content-center">
+                        <div class="roundedBg">
+                            <h2>
+                                আইসিটি, গণিত
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="aboutTeacher">
+                        <div class="m-2">
+                            <h2>
+                                শিক্ষক, স্পৃহা এডুকেশন কেয়ার
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="aboutTeacher">
+                        <div class="m-2">
+                            <h2>
+                                বুয়েট ১৮
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="headerColor"></div>
+                <div class="d-flex justify-content-center mb-3" style="margin-top: -60px; z-index: 999;">
+                    <div class="teacherImgBorder1">
+                        <img class="roundImg" src="~/assets/images/3. Win.jpeg" height="100%;" width="100%;" alt="Logo">
+
+                        @* <div class="teacherImgBorder2">
+                        </div> *@
+                    </div>
+                </div>
+
+                <div class="teacherDetails">
+                    <div class="teacherName">
+                        <h2>ফাতিন হাসনাত উইন</h2>
+                    </div>
+                    <div class="subjectName d-flex justify-content-center">
+                        <div class="roundedBg">
+                            <h2>
+                                গণিত
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="aboutTeacher">
+                        <div class="m-2">
+                            <h2>
+                                শিক্ষক, স্পৃহা এডুকেশন কেয়ার
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="aboutTeacher">
+                        <div class="m-2">
+                            <h2>
+                                বুয়েট ২৩
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="headerColor"></div>
+                <div class="d-flex justify-content-center mb-3" style="margin-top: -60px; z-index: 999;">
+                    <div class="teacherImgBorder1">
+                        <img class="roundImg" src="~/assets/images/2. Aribullah.jpeg" height="100%;" width="100%;" alt="Logo">
+
+                        @* <div class="teacherImgBorder2">
+                        </div> *@
+                    </div>
+                </div>
+
+                <div class="teacherDetails">
+                    <div class="teacherName">
+                        <h2>মোহাম্মদ আবিদ হাসান</h2>
+                    </div>
+                    <div class="subjectName d-flex justify-content-center">
+                        <div class="roundedBg">
+                            <h2>
+                                পদার্থবিজ্ঞান
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="aboutTeacher">
+                        <div class="m-2">
+                            <h2>
+                                শিক্ষক, স্পৃহা এডুকেশন কেয়ার
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="aboutTeacher">
+                        <div class="m-2">
+                            <h2>
+                                বুয়েট ২১
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="title">
+
+        <div class="col-md-12">
+            <div style="display:flex; border-bottom: 1px solid #bcbcbc; padding: 10px;">
+                <div class="executiveCommiteeMember">
+                    <div class="imageEC">
+                        <img src="~/assets/images/classNineSecion.png" height="100%;" width="100%;" alt="Logo">
+                    </div>
+                    <div class="nameEC">
+                        <h1><span class="title">নাম:</span> <span> মোঃ আরিবুল্লাহ খান</span></h1>
+                        <h1><span class="title">প্রতিষ্ঠান:</span> <span> বুয়েট ১৮</span></h1>
+                        <h1><span class="title">শিক্ষক:</span> <span> আইসিটি, গণিত</span> </h1>
+                    </div>
+
+                </div>
+                <div class="executiveCommiteeMember">
+                    <div class="imageEC">
+                        <img src="~/assets/images/Win.jpeg" height="100%;" width="100%;" alt="Logo">
+                    </div>
+                    <div class="nameEC">
+                        <h1><span class="title">নাম:</span> <span> ফাতিন হাসনাত উইন</span></h1>
+                        <h1><span class="title">প্রতিষ্ঠান:</span> <span> বুয়েেট ২৩</span></h1>
+                        <h1><span class="title">শিক্ষক:</span> <span> গণিত</span> </h1>
+                    </div>
+
+                </div>
+                <div class="executiveCommiteeMember">
+                    <div class="imageEC">
+                        <img src="~/assets/images/Abid.jpeg" height="100%;" width="100%;" alt="Logo">
+                    </div>
+                    <div class="nameEC">
+                        <h1><span class="title">নাম:</span> <span> মোহাম্মদ আবিদ হাসান</span></h1>
+                        <h1><span class="title">প্রতিষ্ঠান:</span> <span> বুয়েট ২১</span></h1>
+                        <h1><span class="title">শিক্ষক:</span> <span> পদার্থবিজ্ঞান</span> </h1>
+                    </div>
+
+                </div>
+            </div>
+
+            <div style="display:flex; border-bottom: 1px solid #bcbcbc; padding: 10px;">
+                <div class="executiveCommiteeMember">
+                    <div class="imageEC">
+                        <img src="~/assets/images/Hussen.jpeg" height="100%;" width="100%;" alt="Logo">
+                    </div>
+                    <div class="nameEC">
+                        <h1><span class="title">নাম:</span> <span> মোঃ হোসাইন</span></h1>
+                        <h1><span class="title">প্রতিষ্ঠান:</span> <span> বুয়েট ২৩</span></h1>
+                        <h1><span class="title">শিক্ষক:</span> <span> পদার্থবিজ্ঞান</span> </h1>
+                    </div>
+
+                </div>
+                <div class="executiveCommiteeMember">
+                    <div class="imageEC">
+                        <img src="~/assets/images/Basit.jpeg" height="100%;" width="100%;" alt="Logo">
+                    </div>
+                    <div class="nameEC">
+                        <h1><span class="title">নাম:</span> <span> তাসমিউল বাসিত সরকার</span></h1>
+                        <h1><span class="title">প্রতিষ্ঠান:</span> <span> বুয়েট ২২</span></h1>
+                        <h1><span class="title">শিক্ষক:</span> <span> পদার্থবিজ্ঞান</span> </h1>
+                    </div>
+
+                </div>
+                <div class="executiveCommiteeMember">
+                    <div class="imageEC">
+                        <img src="~/assets/images/Shafat.jpeg" height="100%;" width="100%;" alt="Logo">
+                    </div>
+                    <div class="nameEC">
+                        <h1><span class="title">নাম:</span> <span> আবদুল্লাহ্ আল শাফাত</span></h1>
+                        <h1><span class="title">প্রতিষ্ঠান:</span> <span> বুয়েট ২২</span></h1>
+                        <h1><span class="title">শিক্ষক:</span> <span> পদার্থবিজ্ঞান</span> </h1>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div style="display:flex; border-bottom: 1px solid #bcbcbc; padding: 10px;">
+                <div class="executiveCommiteeMember">
+                    <div class="imageEC">
+                        <img src="~/assets/images/Monjurul.jpeg" height="100%;" width="100%;" alt="Logo">
+                    </div>
+                    <div class="nameEC">
+                        <h1><span class="title">নাম:</span> <span> মোঃ মঞ্জুরুল হক</span></h1>
+                        <h1><span class="title">প্রতিষ্ঠান:</span> <span> বুয়েট ২৪</span></h1>
+                        <h1><span class="title">শিক্ষক:</span> <span> পদার্থবিজ্ঞান</span> </h1>
+                    </div>
+
+                </div>
+                <div class="executiveCommiteeMember">
+                    <div class="imageEC">
+                        <img src="~/assets/images/Kayes.jpeg" height="100%;" width="100%;" alt="Logo">
+                    </div>
+                    <div class="nameEC">
+                        <h1><span class="title">নাম:</span> <span> এম. এ. এ. কায়েস</span></h1>
+                        <h1><span class="title">প্রতিষ্ঠান:</span> <span> বুয়েট ১৬</span></h1>
+                        <h1><span class="title">শিক্ষক:</span> <span> পদার্থবিজ্ঞান</span> </h1>
+                    </div>
+
+                </div>
+                <div class="executiveCommiteeMember">
+                    <div class="imageEC">
+                        <img src="~/assets/images/Sabit Al Sami.jpg" height="100%;" width="100%;" alt="Logo">
+                    </div>
+                    <div class="nameEC">
+                        <h1><span class="title">নাম:</span> <span> মোঃ সাবিত আল সামী</span></h1>
+                        <h1><span class="title">প্রতিষ্ঠান:</span> <span> বুয়েট ২৪</span></h1>
+                        <h1><span class="title">শিক্ষক:</span> <span> গণিত</span> </h1>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div style="display:flex; border-bottom: 1px solid #bcbcbc; padding: 10px;">
+                <div class="executiveCommiteeMember">
+                    <div class="imageEC">
+                        <img src="~/assets/images/Arish.jpeg" height="100%;" width="100%;" alt="Logo">
+                    </div>
+                    <div class="nameEC">
+                        <h1><span class="title">নাম:</span> <span> আরিশ</span></h1>
+                        <h1><span class="title">প্রতিষ্ঠান:</span> <span> বুয়েট ২১</span></h1>
+                        <h1><span class="title">শিক্ষক:</span> <span> গণিত</span> </h1>
+                    </div>
+
+                </div>
+                <div class="executiveCommiteeMember">
+                    <div class="imageEC">
+                        <img src="~/assets/images/Fahim.jpeg" height="100%;" width="100%;" alt="Logo">
+                    </div>
+                    <div class="nameEC">
+                        <h1><span class="title">নাম:</span> <span> ফাহিম ফয়সাল ত্বহা</span></h1>
+                        <h1><span class="title">প্রতিষ্ঠান:</span> <span> ঢাবি ২২</span></h1>
+                        <h1><span class="title">শিক্ষক:</span> <span> ইংরেজি</span> </h1>
+                    </div>
+
+                </div>
+                <div class="executiveCommiteeMember">
+                    <div class="imageEC">
+                        <img src="~/assets/images/Suhanur.jpeg" height="100%;" width="100%;" alt="Logo">
+                    </div>
+                    <div class="nameEC">
+                        <h1><span class="title">নাম:</span> <span> মোঃ সোহানুর রহমান</span></h1>
+                        <h1><span class="title">প্রতিষ্ঠান:</span> <span> বুয়েট ২২</span></h1>
+                        <h1><span class="title">শিক্ষক:</span> <span> গণিত</span> </h1>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div style="display:flex; border-bottom: 1px solid #bcbcbc; padding: 10px;">
+                <div class="executiveCommiteeMember">
+                    <div class="imageEC">
+                        <img src="~/assets/images/Shupto.jpeg" height="100%;" width="100%;" alt="Logo">
+                    </div>
+                    <div class="nameEC">
+                        <h1><span class="title">নাম:</span> <span> মোঃ ইমতিয়াজ সালেকীন সুপ্ত</span></h1>
+                        <h1><span class="title">প্রতিষ্ঠান:</span> <span> বুয়েট ২২</span></h1>
+                        <h1><span class="title">শিক্ষক:</span> <span> পদার্থবিজ্ঞান</span> </h1>
+                    </div>
+
+                </div>
+                <div class="executiveCommiteeMember">
+                    <div class="imageEC">
+                        <img src="~/assets/images/Shoeb.jpeg" height="100%;" width="100%;" alt="Logo">
+                    </div>
+                    <div class="nameEC">
+                        <h1><span class="title">নাম:</span> <span> সালেহ মুহাম্মদ সোয়েব</span></h1>
+                        <h1><span class="title">প্রতিষ্ঠান:</span> <span> ঢাকা মেডিকেল K-80</span></h1>
+                        <h1><span class="title">শিক্ষক:</span> <span> জীববিজ্ঞান</span> </h1>
+                    </div>
+
+                </div>
+                <div class="executiveCommiteeMember">
+                    <div class="imageEC">
+                        <img src="~/assets/images/Mynurdoza.jpg" height="100%;" width="100%;" alt="Logo">
+                    </div>
+                    <div class="nameEC">
+                        <h1><span class="title">নাম:</span> <span> কে. এম. মাইনূরদোজা</span></h1>
+                        <h1><span class="title">প্রতিষ্ঠান:</span> <span> বুয়েট ২২</span></h1>
+                        <h1><span class="title">শিক্ষক:</span> <span> পদার্থবিজ্ঞান</span> </h1>
+                    </div>
+
+                </div>
+            </div>
+
+            <div style="display:flex; border-bottom: 1px solid #bcbcbc; padding: 10px;">
+                <div class="executiveCommiteeMember">
+                    <div class="imageEC">
+                        <img src="~/assets/images/Sazzad.jpeg" height="100%;" width="100%;" alt="Logo">
+                    </div>
+                    <div class="nameEC">
+                        <h1><span class="title">নাম:</span> <span> সাজ্জাদ</span></h1>
+                        <h1><span class="title">প্রতিষ্ঠান:</span> <span> বুয়েট ২২</span></h1>
+                        <h1><span class="title">শিক্ষক:</span> <span> রসায়ন</span> </h1>
+                    </div>
+
+                </div>
+                <div class="executiveCommiteeMember">
+                    <div class="imageEC">
+                        <img src="~/assets/images/Shadhin.jpeg" height="100%;" width="100%;" alt="Logo">
+                    </div>
+                    <div class="nameEC">
+                        <h1><span class="title">নাম:</span> <span> মোঃ নাফিউ নাঈম স্বাধীন</span></h1>
+                        <h1><span class="title">প্রতিষ্ঠান:</span> <span> বুয়েট ২২</span></h1>
+                        <h1><span class="title">শিক্ষক:</span> <span> গণিত</span> </h1>
+                    </div>
+
+                </div>
+                <div class="executiveCommiteeMember">
+                    <div class="imageEC">
+                        <img src="~/assets/images/profileImg.webp" height="100%;" width="100%;" alt="Logo">
+                    </div>
+                    <div class="nameEC">
+                        <h1><span class="title">নাম:</span> <span> </span></h1>
+                        <h1><span class="title">প্রতিষ্ঠান:</span> <span> </span></h1>
+                        <h1><span class="title">শিক্ষক:</span> <span> </span> </h1>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+

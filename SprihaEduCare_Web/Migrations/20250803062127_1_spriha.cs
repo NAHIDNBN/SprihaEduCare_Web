@@ -1,0 +1,62 @@
+﻿using Microsoft.EntityFrameworkCore.Migrations;
+
+#nullable disable
+
+namespace SprihaEduCare_Web.Migrations
+{
+    /// <inheritdoc />
+    public partial class _1_spriha : Migration
+    {
+        /// <inheritdoc />
+        protected override void Up(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropTable(
+                name: "QuickTests");
+
+            migrationBuilder.CreateTable(
+                name: "SprihaQuickTests",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    QuestionText = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    OptionA = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    OptionB = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    OptionC = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    OptionD = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CorrectAnswer = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Part = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_SprihaQuickTests", x => x.Id);
+                });
+        }
+
+        /// <inheritdoc />
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropTable(
+                name: "SprihaQuickTests");
+
+            migrationBuilder.CreateTable(
+                name: "QuickTests",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CorrectAnswer = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    OptionA = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    OptionB = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    OptionC = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    OptionD = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Part = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    QuestionText = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_QuickTests", x => x.Id);
+                });
+        }
+    }
+}

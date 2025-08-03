@@ -2,7 +2,7 @@
 
 namespace SprihaEduCare_Web.Models
 {
-    public class QuickTest
+    public class SprihaQuickTest
     {
         [Key]
         public int Id { get; set; }

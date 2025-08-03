@@ -3,7 +3,7 @@ using SprihaEduCare_Web.DataAccess;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<QuickTestDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<SprihaQuickTestDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
 // Add services to the container.

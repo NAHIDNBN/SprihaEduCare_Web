@@ -39,6 +39,11 @@ html {
 
 
 /*......................Header Starts..........................*/
+.navBg{
+    background-color: white;
+    padding: 15px 0px;
+    position: relative;
+}
 .navBar {
     position: fixed;
     top: 0;
@@ -46,12 +51,12 @@ html {
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: space-between;
-    padding: 0px 50px;
+    justify-content: space-around;
+    padding: 15px 50px;
     z-index: 3;
     font-size: 17px;
     font-family: 'Cambria Math';
-    background-color: #001844;
+    background-color: #ebecee;
     /*border-bottom: 2px solid #bcbcbc;*/
     /*box-shadow: inset 0px 0px 10px 0px #bcbcbc;*/
 }
@@ -61,20 +66,20 @@ html {
 }
 
 .navBar a {
-    color: #f1f1f1 !important;
+    color: #2f74ba !important;
     font-weight: 600;
     font-size: 15px;
 }
 
 .navBar .logo a {
-    color: #1a73e8 !important;
+    color: #2f74ba !important;
     font-weight: 600;
     font-size: 20px;
 }
 
 .navBar a:hover {
     /*border-bottom: 2px solid #009cdc !important;*/
-    color: #1a73e8 !important;
+    color: #bcbcbc !important;
     cursor: pointer;
 }
 
@@ -83,7 +88,7 @@ html {
 }
 
 .navBar li.active {
-    color: #1a73e8;
+    color: #2f74ba;
 }
 
 li.nav-item {
@@ -97,8 +102,8 @@ li.nav-item {
 }
 
     .sprihaLogo img {
-        height: 110px;
-        width: 150px;
+        height: 80px;
+        width: 100px;
         /*position: relative;
         bottom: 25px;*/
         /*border: 1px solid #AD1920;
@@ -112,10 +117,36 @@ li.nav-item {
     /*position: relative;
     bottom: 25px;*/
 }
-
-.nav > li > a {
-    padding: 10px 20px;
+.menu{
+    margin-right: 50px;
 }
+.quickTestCircle {
+    background-color: #4970b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    z-index: 9;
+    height: 150px;
+    width: 150px;
+}
+    .quickTestCircle ul{
+        margin: 0px;
+        padding: 0px;
+    }
+    .quickTestCircle li {
+        list-style: none;
+    }
+    .quickTestCircle a {
+        color: white !important;
+        text-align: center;
+    }
+    .nav > li > a {
+        padding: 10px 20px;
+    }
 
 .navbar-expand-sm .navbar-nav .nav-link {
     padding-left: 10px;
@@ -189,8 +220,12 @@ li.nav-item {
     /* background: linear-gradient(to right, #001844, #3b5998); */
     /* padding: 10px; */
 }
+.hero-2 {
+    height: auto;
+    display: flex;
+}
 .slideShow {
-    width: 70%;
+    width: 100%;
     height: 100%;
     /* box-shadow: inset 0 0 100px 10px #001844; */
     /* padding: 5rem 10rem; */
@@ -225,7 +260,7 @@ li.nav-item {
     }
 .admissionForm {
     width: 30%;
-    padding: 20px;
+    padding: 5rem 2rem;
     /* border: 1px solid #bcbcbc; */
     display: flex;
     align-items: center;
@@ -252,9 +287,10 @@ li.nav-item {
 }
 
     .submitBtn:hover {
-        border: 1px solid #1a73e8;
+        border: 1px solid #9b7537;
         background-color: white;
-        color: #1a73e8;
+        color: #9b7537;
+        box-shadow: inset 0 0 20px 0px #9b7537;
     }
 
 .wrapper {

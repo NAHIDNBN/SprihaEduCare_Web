@@ -95,6 +95,35 @@
         margin-bottom: 15px;
         color: rgba(0, 0, 0, 0.6);
     }
+
+    .video-container {
+        width: 70%;
+        box-shadow: inset 0 0 150px 0px #001844 !important;
+        /* margin: 0 auto;  */
+    }
+
+        .video-container iframe {
+            width: 100%;
+            height: 100%; 
+        }
+
+    .ytp-cued-thumbnail-overlay-image {
+        box-shadow: inset 0 0 150px 0px #001844 !important;
+    }
+
+    .ytp-cued-thumbnail-overlay{
+        box-shadow: inset 0 0 150px 0px #001844 !important;
+    }
+
+    .programs{
+        padding: 5rem 2rem;
+        box-shadow: inset 0 0 40px 0px #001844;
+    }
+
+    .programImg{
+        height: 100%;
+        width: 100%;
+    }
 </style>
 
 
@@ -115,14 +144,14 @@
                     <img src="~/assets/images/Sub 04 (Mobile).webp" class="d-block w-100 h-100" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            @* <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
-                </button>
+                </button> *@
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -169,6 +198,79 @@
         </div>
     </div> *@
 
+    @* <div class="admissionForm">
+        <div class="admissionFromInner">
+
+            <h2 style="color: white;text-align: center;margin-bottom: 2rem;">
+                ফ্রি ক্লাসের জন্য আবেদন
+            </h2>
+
+            <form method="post" action="ContactUs">
+                <div style="border: 1px solid #bcbcbc;">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="userName" placeholder="Name">
+                        <span class="warning"></span>
+
+                        <label for="floatingInput">শিক্ষার্থীর নাম:</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="tel" class="form-control" id="phoneNumber" placeholder="Mobile">
+                        <span class="warning"></span>
+                        <label for="floatingInput">মোবাইল নম্বর:</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="userEmail" placeholder="email@example.com">
+                        <span class="warning"></span>
+
+                        <label for="floatingInput">পিতা/মাতার নাম:</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="userEmail" placeholder="email@example.com">
+                        <span class="warning"></span>
+
+                        <label for="floatingInput">ঠিকানা:</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="userEmail" placeholder="email@example.com">
+                        <span class="warning"></span>
+
+                        <label for="floatingInput">স্কুল/কলেজের নাম:</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="userEmail" placeholder="email@example.com">
+                        <span class="warning"></span>
+
+                        <label for="floatingInput">ইমেইল আইডি:</label>
+                    </div>
+                </div>
+
+
+                <button type="submit" class="submitBtn mt-4" onclick="saveScrollPosition()">সাবমিট </button>
+            </form>
+
+        </div>
+    </div> *@
+
+</section>
+<section class="aboutSprihaMain">
+    <div class="section">
+        <h3>স্পৃহা কী?</h3>
+        <p>
+            <strong>স্পৃহা</strong> একটি <strong>নলেজ শেয়ারিং প্ল্যাটফর্ম</strong>, যেখানে বুয়েট, ঢাকা বিশ্ববিদ্যালয় ও মেডিকেল কলেজের শিক্ষার্থীরা তাঁদের অর্জিত জ্ঞান ও অভিজ্ঞতা ভাগ করে নিচ্ছেন এসএসসি ও এইচএসসি পর্যায়ের শিক্ষার্থীদের সঙ্গে।
+        </p>
+        <p>
+            আমাদের একমাত্র লক্ষ্য হলো শিক্ষার্থীর মৌলিক ভিত্তি গড়ে তোলা, যাতে তারা ভবিষ্যতের শিক্ষাজীবনে আর কষ্টে না পড়ে।
+        </p>
+    </div>
+</section>
+<section class="hero-2">
+    <div class="video-container">
+        <iframe 
+            width="560" height="315" src="https://www.youtube.com/embed/VRp8KUaExuY?si=3bErSdg9m3usBIZY" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
     <div class="admissionForm">
         <div class="admissionFromInner">
 
@@ -221,21 +323,42 @@
 
         </div>
     </div>
-
+    
 </section>
-<section class="aboutSprihaMain">
-    <div class="section">
-        <h3>স্পৃহা কী?</h3>
-        <p>
-            <strong>স্পৃহা</strong> একটি <strong>নলেজ শেয়ারিং প্ল্যাটফর্ম</strong>, যেখানে বুয়েট, ঢাকা বিশ্ববিদ্যালয় ও মেডিকেল কলেজের শিক্ষার্থীরা তাঁদের অর্জিত জ্ঞান ও অভিজ্ঞতা ভাগ করে নিচ্ছেন এসএসসি ও এইচএসসি পর্যায়ের শিক্ষার্থীদের সঙ্গে।
-        </p>
-        <p>
-            আমাদের একমাত্র লক্ষ্য হলো শিক্ষার্থীর মৌলিক ভিত্তি গড়ে তোলা, যাতে তারা ভবিষ্যতের শিক্ষাজীবনে আর কষ্টে না পড়ে।
-        </p>
+
+
+<section class="programs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 my-3">
+                <img src="~/assets/images/Subject Wise 01.webp" class="programImg">
+            </div>
+            <div class="col-md-3 my-3">
+                <img src="~/assets/images/Subject Wise 02.webp" class="programImg">
+            </div>
+            <div class="col-md-3 my-3">
+                <img src="~/assets/images/Subject Wise 03.webp" class="programImg">
+            </div>
+            <div class="col-md-3 my-3">
+                <img src="~/assets/images/Subject Wise 04.webp" class="programImg">
+            </div>
+            <div class="col-md-3 my-3">
+                <img src="~/assets/images/Subject Wise 05.webp" class="programImg">
+            </div>
+            <div class="col-md-3 my-3">
+                <img src="~/assets/images/Subject Wise 06.webp" class="programImg">
+            </div>
+            <div class="col-md-3 my-3">
+                <img src="~/assets/images/Subject Wise 07.webp" class="programImg">
+            </div>
+            <div class="col-md-3 my-3">
+                <img src="~/assets/images/Subject Wise 08.webp" class="programImg">
+            </div>
+        </div>
     </div>
 </section>
 
-<section class="teachers">
+@* <section class="teachers">
     <div class="wrapper">
         <div class="image img1"><img src="~/assets/images/10. Sabit Al Sami.jpg" class="img img1"></div>
         <div class="image img2"><img src="~/assets/images/11. Arish.jpeg" class="img img2"></div>
@@ -253,18 +376,12 @@
         <div class="image img14"><img src="~/assets/images/22. Jisan.jpeg" class="img img14"></div>
         <div class="image img15"><img src="~/assets/images/23. Choton.jpeg" class="img img15"></div>
         <div class="image img16"><img src="~/assets/images/24. Radhik.jpeg" class="img img16"></div>
-        <!-- <div class="image img15"><img src="image2.jpg" class="img img17"></div>
-        <div class="image img16"><img src="image3.jpg" class="img img18"></div> -->
 
         <div class="text">
             <h1 style="color: #001844;">আমাদের সম্মানিত শিক্ষকমণ্ডলী</h1>
-           @*  <p>
-                This paragraph sits in the middle while images are placed randomly around it.
-                You can imagine a creative layout for an art portfolio, fashion blog, or even a scrapbook.
-            </p> *@
         </div>
     </div>
-</section>
+</section> *@
 @* <section class="sprihaSologan">
     <div>
         <img src="~/assets/images/Name With Slogan.png" class="d-block w-100 h-100" alt="...">

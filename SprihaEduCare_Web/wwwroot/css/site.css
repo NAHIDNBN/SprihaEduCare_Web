@@ -312,6 +312,7 @@ li.nav-item {
     /*position: absolute;*/
     z-index: 1;
     opacity: 0.9;
+    padding: 15px;
 }
 /*.img1 {
     top: 5%;
@@ -539,20 +540,25 @@ li.nav-item {
 .image img {
     width: 100%;
      height: 100%; 
-     padding: 10px;
-    /* border-radius: 8px; */
-    /* box-shadow: 0 2px 6px 0px #bcbcbc; */
-}
+     /*padding: 10px 0px;*/
+     border-radius: 5px; 
+     box-shadow: 0 0px 6px 0px #bcbcbc; 
 
-.text {
-    position: absolute;
-    inset: 0;
-    margin: auto;
-    max-width: 600px;
-    height: 100px;
-    color: white;
-    text-align: center;
 }
+    /*.image img:hover {
+        transform: translateY(-5px), translateX(-5px);
+        transition: all .25s cubic-bezier(.02,.01,.47,1);
+        cursor: pointer;
+    }*/
+    .text {
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        max-width: 600px;
+        height: 100px;
+        color: white;
+        text-align: center;
+    }
 
 /*......................Home Page Ends..........................*/
 

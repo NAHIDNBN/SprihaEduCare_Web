@@ -64,32 +64,36 @@
     .carousel-control-next-icon {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23001844' viewBox='0 0 8 8'%3e%3cpath d='M2.5 0l-.71.71L5.09 4l-3.3 3.29.71.71L6.5 4 2.5 0z'/%3e%3c/svg%3e");
     } */
-    .aboutSprihaMain{
-        background: linear-gradient(to bottom, rgba(0, 24, 68, 0.4), rgba(188, 188, 188, 0.5));
+    .hero-3{
+        display: flex;
+    }
+    .aboutSpriha {
+        width: 50%;
+        background: linear-gradient(to bottom, rgba(0, 24, 68, 0.2), rgba(188, 188, 188, 0.3));
         padding: 30px;
         text-align: center;
         color: #001844;
         font-size: 20px;
         /* box-shadow: inset 0px 0px 3px 0px #1a73e8; */
         /* box-shadow: 0px 3px 3px rgba(119,118,121,.5); */
-        box-shadow: 0px 1px 10px rgba(0,24,68,0.4);
+        /* box-shadow: 0px 1px 10px rgba(0,24,68,0.4); */
     }
 
-    .aboutSprihaMain h2 {
+        .aboutSpriha h2 {
         text-align: center;
         font-size: 2.5rem;
         margin-bottom: 30px;
         color: #001844;
     }
 
-    .aboutSprihaMain h3 {
+        .aboutSpriha h3 {
         color: #001844;
         margin-top: 10px;
         font-size: 1.4rem;
         font-weight: 600;
         }
 
-    .aboutSprihaMain p {
+        .aboutSpriha p {
         font-size: 1.05rem;
         line-height: 1.8;
         margin-bottom: 15px;
@@ -137,8 +141,79 @@
         border: 3px solid #f1f1f1;
         /* box-shadow: inset 0px 0px 3px 0px #1a73e8; */
         /* box-shadow: 0px 3px 3px rgba(119, 118, 121, .5); */
-        /* box-shadow: 0px 1px 10px rgba(0, 24, 68, 0.4);
+        /* box-shadow: 0px 1px 10px rgba(0, 24, 68, 0.4);*/
     }
+
+    
+
+    .teachersMain{
+        width: 50%;
+        padding: 20px;
+        background-color: #f1f1f1;
+    }
+
+    .teacherTitleMain{
+        /* background: linear-gradient(-30deg, #2f74ba 50%, #001844); */
+        padding: 10px 20px;
+        text-align: center;
+        color: #f1f1f1;
+        font-size: 25px;
+        font-weight: 600;
+        width: auto;
+        border-radius: 50px;
+        border: 3px solid #f1f1f1;
+    }
+
+    .slider {
+        width: 600px;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+        margin: auto;
+    }
+
+    .slides {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+
+        .slides img {
+            width: 600px;
+            height: 400px;
+        }
+
+    .navigation {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+    }
+
+    .nav-btn {
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .teachersList {
+        /* background: linear-gradient(-30deg, #2f74ba 50%, #001844); */
+        border: 2px solid white;
+        padding: 10px 50px;
+        text-align: center;
+        color: #2f74ba;
+        font-size: 17px;
+        font-weight: 600;
+        width: auto;
+        border-radius: 0px;
+        
+    }
+
 </style>
 
 
@@ -267,17 +342,6 @@
     </div> *@
 
 </section>
-<section class="aboutSprihaMain">
-    <div class="section">
-        <h3>স্পৃহা কী?</h3>
-        <p>
-            <strong>স্পৃহা</strong> একটি <strong>নলেজ শেয়ারিং প্ল্যাটফর্ম</strong>, যেখানে বুয়েট, ঢাকা বিশ্ববিদ্যালয় ও মেডিকেল কলেজের শিক্ষার্থীরা তাঁদের অর্জিত জ্ঞান ও অভিজ্ঞতা ভাগ করে নিচ্ছেন এসএসসি ও এইচএসসি পর্যায়ের শিক্ষার্থীদের সঙ্গে।
-        </p>
-        <p>
-            আমাদের একমাত্র লক্ষ্য হলো শিক্ষার্থীর মৌলিক ভিত্তি গড়ে তোলা, যাতে তারা ভবিষ্যতের শিক্ষাজীবনে আর কষ্টে না পড়ে।
-        </p>
-    </div>
-</section>
 <section class="hero-2">
     <div class="video-container">
         <iframe 
@@ -340,13 +404,75 @@
     </div>
     
 </section>
+<section class="hero-3">
+    <div class="aboutSpriha">
+        <h3>স্পৃহা কী?</h3>
+        <p>
+            <strong>স্পৃহা</strong> একটি <strong>নলেজ শেয়ারিং প্ল্যাটফর্ম</strong>, যেখানে বুয়েট, ঢাকা বিশ্ববিদ্যালয় ও মেডিকেল কলেজের শিক্ষার্থীরা তাঁদের অর্জিত জ্ঞান ও অভিজ্ঞতা ভাগ করে নিচ্ছেন এসএসসি ও এইচএসসি পর্যায়ের শিক্ষার্থীদের সঙ্গে।
+        </p>
+        <p>
+            আমাদের একমাত্র লক্ষ্য হলো শিক্ষার্থীর মৌলিক ভিত্তি গড়ে তোলা, যাতে তারা ভবিষ্যতের শিক্ষাজীবনে আর কষ্টে না পড়ে।
+        </p>
+    </div>
+    <div class="teachersMain">
+        <div>
+            <h1 class="teacherTitleMain" style="color: #001844;">আমাদের সম্মানিত শিক্ষকমণ্ডলী</h1>
+        </div>
+        <div class="wrapper row">
+            <div class="image img1 col-md-2">
+                <img src="~/assets/images/10. Sabit Al Sami.jpg" class="img img1">
+            </div>
+            <div class="image img2 col-md-2">
+                <img src="~/assets/images/11. Arish.jpeg" class="img img2">
+            </div>
+            <div class="image img3 col-md-2">
+                <img src="~/assets/images/12. Fahim.jpeg" class="img img3">
+            </div>
+            <div class="image img4 col-md-2">
+                <img src="~/assets/images/13. Suhanur.jpeg" class="img img4">
+            </div>
+            <div class="image img5 col-md-2">
+                <img src="~/assets/images/14. Shupto.jpeg" class="img img5">
+            </div>
+            <div class="image img6 col-md-2">
+                <img src="~/assets/images/15. Shoeb.jpeg" class="img img6">
+            </div>
+            <div class="image img7 col-md-2">
+                <img src="~/assets/images/16. Mynurdoza.jpg" class="img img7">
+            </div>
+            <div class="image img8 col-md-2">
+                <img src="~/assets/images/17. Sazzad.jpeg" class="img img8">
+            </div>
+            <div class="image img9 col-md-2">
+                <img src="~/assets/images/18. Shadhin.jpeg" class="img img9">
+            </div>
+            <div class="image img10 col-md-2">
+                <img src="~/assets/images/19. Jihad.jpeg" class="img img10">
+            </div>
+            <div class="image img11 col-md-2">
+                <img src="~/assets/images/2. Aribullah.jpeg" class="img img11">
+            </div>
+            <div class="image img12 col-md-2">
+                <img src="~/assets/images/20. Arpon.jpeg" class="img img12">
+            </div>
+            <div class="d-flex justify-content-center" style="font-family: cursive; ">
+                <div class="title teachersList col-md-12 mt-4 ">
+                    শিক্ষক মণ্ডলীর তালিকা
+                </div>
+            </div>
+            
+
+            @* <div class="text">
+            </div> *@
+        </div>
+    </div>
+</section>
 
 
 <section class="programs">
     <div class="d-flex justify-content-center container">
         <div class="row">
             <div class="title programsTitle col-md-12 mb-4" style="font-family: cursive; ">প্রোগ্রামসমূহ:</div>
-
         </div>
     </div>
 

@@ -15,15 +15,15 @@ namespace SprihaEduCare_Web.Controllers
 
         public IActionResult Index()
         {
-            var parts = new[] { "Math", "English", "General Knowdledge", "Science", "SocialScience" };
-            var selectedQuestions = new List<SprihaQuickTest>();
+            //var parts = new[] { "Math", "English", "General Knowdledge", "Science", "SocialScience" };
+            //var selectedQuestions = new List<SprihaQuickTest>();
 
-            foreach (var part in parts)
-            {
-                var questions = _context.SprihaQuickTests.Where(q => q.Part == part).OrderBy(q => Guid.NewGuid()).Take(5).ToList();
+            //foreach (var part in parts)
+            //{
+            //    var questions = _context.SprihaQuickTests.Where(q => q.Part == part).OrderBy(q => Guid.NewGuid()).Take(5).ToList();
 
-                selectedQuestions.AddRange(questions);
-            }
+            //    selectedQuestions.AddRange(questions);
+            //}
 
             return View();
         }

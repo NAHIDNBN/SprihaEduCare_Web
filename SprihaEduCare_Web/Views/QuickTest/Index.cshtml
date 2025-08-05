@@ -72,9 +72,27 @@
     <div class="question">
         <form method="post" action="/QuickTest/SubmitAnswers">
             <ol>
-                @foreach (var question in Model)
+                <li>
+                    <div style="display: flex;">
+                        <input type="radio" name="" value="A" id="q@question.Id_A" />
+                        <label class="btn-label" for="q@question.Id_A">OptionA</label> <br />
+
+                        <input type="radio" name="" value="B" id="q@question.Id_B" />
+                        <label class="btn-label" for="">OptionB</label> <br />
+
+                        <input type="radio" name="" value="C" id="q@question.Id_C" />
+                        <label class="btn-label" for="q@question.Id_C">OptionC</label> <br />
+
+                        <input type="radio" name="" value="D" id="q@question.Id_D" />
+                        <label class="btn-label" for="q@question.Id_D">OptionD</label>
+                    </div>
+                </li>
+
+
+
+               @*  @foreach (var question in Model)
                 {
-                    <li>
+                    <li> *@
                         @* <strong>[@question.Part]</strong><br /> *@
                         @* <strong>@question.QuestionText</strong><br />
                         <button class="optionBtn" style="width: 47%; margin: 1%;" type="submit" name="answer_@question.Id" value="A">@question.OptionA</button>
@@ -84,7 +102,7 @@
                         <button class="optionBtn" style="width: 47%; margin: 1%;" type="submit" name="answer_@question.Id" value="D">@question.OptionD</button>
                         <br /> *@
 
-                        <strong class="question">@question.QuestionText</strong><br />
+                        @* <strong class="question">@question.QuestionText</strong><br />
                         <div style="display: flex;">
                             <input type="radio" name="answer_@question.Id" value="A" id="q@question.Id_A" />
                             <label class="btn-label" for="q@question.Id_A">@question.OptionA</label> <br />
@@ -100,7 +118,7 @@
                         </div>
 
                     </li>
-                }
+                } *@
             </ol>
 
             <button type="submit">Submit Answers</button>

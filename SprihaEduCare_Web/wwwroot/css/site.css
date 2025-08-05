@@ -52,7 +52,7 @@ html {
     height: auto;
     display: flex;
     justify-content: space-around;
-    padding: 15px 50px;
+    padding: 10px 50px;
     z-index: 3;
     font-size: 17px;
     font-family: 'Cambria Math';
@@ -102,7 +102,7 @@ li.nav-item {
 }
 
     .sprihaLogo img {
-        height: 80px;
+        height: 100px;
         width: 100px;
         /*position: relative;
         bottom: 25px;*/
@@ -112,13 +112,13 @@ li.nav-item {
     }
 
 .sprihaLogo1 img {
-    height: 100px;
-    width: 150px;
+    height: 75px;
+    width: 100px;
     /*position: relative;
     bottom: 25px;*/
 }
 .menu{
-    margin-right: 50px;
+    margin-right: 75px;
 }
 .quickTestCircle {
     background-color: #4970b3;
@@ -128,10 +128,10 @@ li.nav-item {
     border-radius: 50%;
     position: absolute;
     top: 5px;
-    right: 20px;
+    right: 40px;
     z-index: 9;
-    height: 150px;
-    width: 150px;
+    height: 140px;
+    width: 140px;
 }
     .quickTestCircle ul{
         margin: 0px;
@@ -152,21 +152,20 @@ li.nav-item {
     padding-left: 10px;
     padding-right: 20px;
 }
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 10px solid red;
+}
 /*......................Header Ends..........................*/
 
 
 
 
 /*......................Common Starts..........................*/
-.titleMain {
-    background: linear-gradient(to bottom, rgba(0, 24, 68, 0.4), rgba(188, 188, 188, 0.5));
-    padding: 20px;
-    text-align: center;
-    color: #001844;
-    font-size: 20px;
-    font-weight: 600;
-    box-shadow: 0px 1px 10px rgba(0,24,68,0.4);
-}
+
 /*.container {*/
     /* max-width: 900px; */
     /*margin: auto;
@@ -177,6 +176,15 @@ li.nav-item {
     /*box-shadow: 0 0 10px 0px #bcbcbc;
     background: linear-gradient(to right, rgba(0, 24, 68, 0.3), rgba(188, 188, 188, 0.5));
 }*/
+.titleMain {
+    background: linear-gradient(to bottom, rgba(0, 24, 68, 0.4), rgba(188, 188, 188, 0.5));
+    padding: 20px;
+    text-align: center;
+    color: #001844;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 0px 1px 10px rgba(0,24,68,0.4);
+}
 .form-floating > .form-control {
     padding: 10px;
     border: 1px solid #bcbcbc;
@@ -558,7 +566,7 @@ img {
 
 #sub-footer {
     padding: 10px 0px;
-    background: #001844;
+    background: #ebecee;
 }
 
 .executiveCommiteeMain {

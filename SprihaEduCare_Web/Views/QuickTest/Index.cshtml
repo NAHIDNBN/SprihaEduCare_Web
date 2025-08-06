@@ -61,12 +61,115 @@
     .question {
         color: #1a3a54;
     }
+
+    /* .mfooter{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    } */
+
+    .coming-soon {
+        width: 100vw;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        overflow: hidden;
+    }
+
+    .coming-soon-inner {
+        position: relative;
+    }
+
+    .heading {
+        font-size: 80px;
+        text-transform: uppercase;
+        padding: 20px;
+        background: #ebecee;
+        color: #4970b3;
+        transform: skewY(-10deg);
+        font-weight: 500;
+        line-height: 100px;
+    }
+
+    .small-heading {
+        font-size: 25px;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 20px;
+        background: #fff;
+        color: gray;
+        transform: skewY(-10deg);
+        font-weight: 500;
+        line-height: 30px;
+        box-shadow: 10px 10px 20px rgb(0 0 0 / .3);
+        position: absolute;
+        right: 0;
+        bottom: -37px;
+    }
+
+
+
+
+
+    .coming-soon-inner:before {
+        content: "";
+        height: 2px;
+        width: 60%;
+        background: #000;
+        position: absolute;
+        top: -50px;
+        right: 0;
+        transform: skewY(-10deg);
+    }
+
+    .coming-soon-inner:after {
+        content: "";
+        height: 2px;
+        width: 60%;
+        background: #fff;
+        position: absolute;
+        bottom: -80px;
+        right: 0;
+        transform: skewY(-10deg);
+    }
+
+    .heading:before {
+        content: "";
+        height: 2px;
+        width: 60%;
+        background: #000;
+        position: absolute;
+        top: -50px;
+        left: 0;
+    }
+
+    .heading:after {
+        content: "";
+        height: 2px;
+        width: 60%;
+        background: #fff;
+        position: absolute;
+        bottom: -120px;
+        left: 0;
+    }
+
+
 </style>
+<section class="coming-soon">
+    <div class="coming-soon-inner">
+      <h1 class="heading">Available Soon</h1>
+      <h2 class="small-heading">Under Construction</h2>
+    </div>
+ </section>
 
 
 
 
-<div class="container">
+
+
+@* <div class="container">
     <h2>Sample Question for Quick Test</h2>
 
     <div class="question">
@@ -86,7 +189,7 @@
                         <input type="radio" name="" value="D" id="q@question.Id_D" />
                         <label class="btn-label" for="q@question.Id_D">OptionD</label>
                     </div>
-                </li>
+                </li> *@
 
 
 
@@ -119,12 +222,12 @@
 
                     </li>
                 } *@
-            </ol>
+@*             </ol>
 
             <button type="submit">Submit Answers</button>
         </form>
 
     </div>
-</div>
+</div> *@
 
 

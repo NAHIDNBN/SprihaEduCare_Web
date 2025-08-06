@@ -579,10 +579,10 @@ li.nav-item {
     }
 
     .about-spriha h3 {
-        color: #2f74ba;
+        color: #001844;
         margin-top: 30px;
-        font-size: 1.4rem;
-        /*font-weight: 600;*/
+        font-size: 1.2rem;
+        font-weight: 600;
     }
 
     .about-spriha p {
@@ -638,17 +638,17 @@ li.nav-item {
     display: none;
 }
 
-img {
+/*img {
     vertical-align: middle;
     height: 250px;
-}
+}*/
 
 
 
 
 
 #sub-footer {
-    padding: 10px 0px;
+    padding: 20px 0px;
     background: #ebecee;
 }
 
@@ -716,3 +716,79 @@ img {
 }
 
 
+@media (max-width: 850px) {
+    .resHeader {
+        display: block;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .sprihaLogoRes img {
+        height: 45px;
+    }
+
+    .navBar {
+        position: relative;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+    }
+
+        .navBar a {
+            color: #2f74ba !important;
+        }
+
+        .navBar ul {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            /*background: gray;
+            opacity: 0.8;*/
+            /*background: linear-gradient(to top, rgba(173, 25, 32, 0.5) 20%, rgba(173, 25, 32, 0.9) 100%) !important;*/
+            background: #bcbcbc;
+        }
+
+        .navBar ul {
+            position: absolute;
+            top: 60px;
+            left: 0;
+            right: 0;
+            flex-direction: column;
+            text-align: center;
+            gap: 0;
+            overflow: hidden;
+        }
+
+            .navBar ul li a {
+                text-decoration: none;
+                color: #009cdc;
+                font-size: 12px;
+            }
+
+    .nav-link {
+        padding: 3px !important;
+    }
+
+    #menuList {
+        transition: all 1s;
+        padding-left: 0px;
+        border-bottom: 1px solid #2f74ba;
+        display: flex;
+        justify-content: center;
+        /*padding: 10px;*/
+    }
+    li.nav-item{
+        padding: 10px;
+    }
+    .arrow-right {
+        width: 0;
+        height: 0;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 8px solid red;
+    }
+}

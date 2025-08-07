@@ -2,8 +2,8 @@
     ViewData["Title"] = "Teachers";
 }
 <style>
-    .teacherList {
-        background: linear-gradient(to bottom, rgba(0, 24, 68, 0.4), rgba(188, 188, 188, 0.5));
+    .titleMain {
+        background: linear-gradient(to bottom, rgba(0, 24, 68, 0.2), rgba(188, 188, 188, 0.3));
         padding: 20px;
         text-align: center;
         color: #001844;
@@ -11,7 +11,7 @@
         font-weight: 600;
         /* box-shadow: inset 0px 0px 3px 0px #1a73e8; */
         /* box-shadow: 0px 3px 3px rgba(119,118,121,.5); */
-        box-shadow: 0px 1px 10px rgba(0,24,68,0.4);
+        /* box-shadow: 0px 1px 10px rgba(0,24,68,0.4); */
     }
 
     .b-gallery.t-theme--light {
@@ -163,74 +163,158 @@
             font-size: 2rem;
         }
     }
+        h2 {
+        color: #f37067;
+        text-align: center;
+    }
+
+    .optionBtn {
+        border: 1px solid #bcbcbc;
+        padding: 5px;
+        color: gray;
+        font-weight: 500;
+    }
+
+    .btn-label {
+        padding: 10px 20px;
+        margin: 5px;
+        background-color: #f1f1f1;
+        color: gray;
+        text-align: center;
+        border: 1px solid #bcbcbc;
+        width: 48%;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-label:hover {
+            border: 1px solid #bcbcbc;
+            box-shadow: inset 0 0 10px 0 #bcbcbc
+        }
+
+    input[type="radio"] {
+        display: none;
+    }
+
+        input[type="radio"]:checked + .btn-label {
+            background-color: #bcbcbc;
+        }
+
+    .question {
+        color: #1a3a54;
+    }
+
+    /* .mfooter{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    } */
+
+    .coming-soon {
+        width: 100vw;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        overflow: hidden;
+    }
+
+    .coming-soon-inner {
+        position: relative;
+    }
+
+    .heading {
+        font-size: 80px;
+        text-transform: uppercase;
+        padding: 20px;
+        background: #ebecee;
+        color: #4970b3;
+        transform: skewY(-10deg);
+        font-weight: 500;
+        line-height: 100px;
+    }
+
+    .small-heading {
+        font-size: 25px;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 20px;
+        background: #fff;
+        color: gray;
+        transform: skewY(-10deg);
+        font-weight: 500;
+        line-height: 30px;
+        box-shadow: 10px 10px 20px rgb(0 0 0 / .3);
+        position: absolute;
+        right: 0;
+        bottom: -37px;
+    }
+
+
+
+
+
+    .coming-soon-inner:before {
+        content: "";
+        height: 2px;
+        width: 60%;
+        background: #000;
+        position: absolute;
+        top: -50px;
+        right: 0;
+        transform: skewY(-10deg);
+    }
+
+    .coming-soon-inner:after {
+        content: "";
+        height: 2px;
+        width: 60%;
+        background: #fff;
+        position: absolute;
+        bottom: -80px;
+        right: 0;
+        transform: skewY(-10deg);
+    }
+
+    .heading:before {
+        content: "";
+        height: 2px;
+        width: 60%;
+        background: #000;
+        position: absolute;
+        top: -50px;
+        left: 0;
+    }
+
+    .heading:after {
+        content: "";
+        height: 2px;
+        width: 60%;
+        background: #fff;
+        position: absolute;
+        bottom: -120px;
+        left: 0;
+    }
+
+    .mfooter{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
 </style>
 
-<section class="teachersMain">
+<section class="titleMain">
     <div class="title teacherList col-md-12" style="font-family: cursive;">জিজ্ঞাসা:</div>
 </section>
 
 
 
-<section class="about-spriha">
-    <div class="container">
-        @* <h2>স্পৃহা কী ও কেন</h2> *@
-
-        <div class="section">
-            <h3>স্পৃহা কী?</h3>
-            <p>
-                <strong>স্পৃহা</strong> একটি <strong>নলেজ শেয়ারিং প্ল্যাটফর্ম</strong>, যেখানে বুয়েট, ঢাকা বিশ্ববিদ্যালয় ও মেডিকেল কলেজের শিক্ষার্থীরা তাঁদের অর্জিত জ্ঞান ও অভিজ্ঞতা ভাগ করে নিচ্ছেন এসএসসি ও এইচএসসি পর্যায়ের শিক্ষার্থীদের সঙ্গে।
-            </p>
-            <p>
-                আমাদের একমাত্র লক্ষ্য হলো শিক্ষার্থীর মৌলিক ভিত্তি গড়ে তোলা, যাতে তারা ভবিষ্যতের শিক্ষাজীবনে আর কষ্টে না পড়ে।
-            </p>
-        </div>
-        <div class="section">
-            <h3>শিক্ষা বাস্তবতা:</h3>
-            <p>
-                গ্লোবাল পিস ইনডেক্স-২০২৪ অনুসারে বিশ্বের সবচেয়ে শান্তিপূর্ণ দেশ আইসল্যান্ড ও আয়ারল্যান্ডের মোট জনসংখ্যা প্রায় ৫৬ লাখ। অথচ বাংলাদেশে মাধ্যমিক পর্যায়ের (ষষ্ঠ থেকে দশম শ্রেণি) শিক্ষার্থীর সংখ্যা ৮১ লাখের বেশি এবং উচ্চমাধ্যমিকে (একাদশ-দ্বাদশ) প্রায় ২৫ লাখ।
-            </p>
-            <p>
-                এই বিপুল শিক্ষার্থীর তুলনায় শিক্ষক সংকট প্রকট। সরকারি হিসাব মতে, প্রতি ৩৩ জন শিক্ষার্থীর জন্য রয়েছে মাত্র ১ জন শিক্ষক এবং এদের মধ্যে প্রশিক্ষণপ্রাপ্ত মাত্র ৭২%।
-            </p>
-        </div>
-
-        <div class="section">
-            <h3>গ্রামীণ বাস্তবতা ও চ্যালেঞ্জ:</h3>
-            <p>
-                মফস্বল ও গ্রামের বিদ্যালয়গুলোতে শিক্ষক সংকট আরও ভয়াবহ। এনটিআরসি দায়িত্ব নেওয়ার আগে এসব অঞ্চলে নিয়োগপ্রক্রিয়া ছিল অস্বচ্ছ, এবং দক্ষতার উন্নয়নে পর্যাপ্ত প্রশিক্ষণও ছিল না। বর্তমানে কিছু উন্নয়ন হলেও কাঙ্ক্ষিত শিক্ষক-ছাত্র অনুপাত এখনো অর্জিত হয়নি।
-            </p>
-            <p>
-                দেশের প্রচলিত বেতন কাঠামোও শিক্ষকদের আকর্ষণ করতে ব্যর্থ। অধিকাংশ মেধাবী শিক্ষার্থী শিক্ষকতায় আগ্রহী হন না, যার প্রভাব পড়ে ইংরেজি, গণিত ও বিজ্ঞানের মতো মূল বিষয়ের উপর।
-            </p>
-        </div>
-
-        <div class="section">
-            <h3>ফলাফল ও পরিণতি:</h3>
-            <p>
-                শিক্ষক সংকটের কারণে শিক্ষার্থীদের নির্ভর করতে হয় প্রাইভেট টিউশন বা কোচিং সেন্টারের উপর। এসব প্রতিষ্ঠান পরীক্ষায় পাস করানোর নিশ্চয়তা দিলেও মৌলিক ভিত্তি গঠনের প্রতি মনোযোগ দেয় না, ফলে বিশ্ববিদ্যালয় পর্যায়ে গিয়ে শিক্ষার্থীরা বিপাকে পড়ে।
-            </p>
-        </div>
-
-        <div class="section">
-            <h3>আমাদের উদ্যোগ: স্পৃহা এডুকেশন কেয়ার</h3>
-            <p>
-                এই প্রেক্ষাপটে গড়ে উঠেছে <strong>“স্পৃহা এডুকেশন কেয়ার”</strong>—একটি সহায়ক শিক্ষা প্ল্যাটফর্ম যার মূল লক্ষ্য SSC ও HSC পর্যায়ের শিক্ষার্থীদের <strong>ভিত্তি মজবুত করা</strong>। আমরা চাই শিক্ষার্থীরা যেন ভবিষ্যতের শিক্ষায় এবং প্রতিযোগিতায় এগিয়ে যেতে পারে আত্মবিশ্বাস নিয়ে।
-            </p>
-        </div>
-
-        <div class="section">
-            <h3>কারা পড়ান?</h3>
-            <p>আমাদের প্ল্যাটফর্মে যারা শিক্ষাদান করেন, তারা দেশের সেরা বিশ্ববিদ্যালয় ও কলেজের শিক্ষার্থী:</p>
-            <ul>
-                <li><strong>বুয়েট</strong> — গণিত, পদার্থবিজ্ঞান, রসায়ন ও আইসিটি</li>
-                <li><strong>সরকারি মেডিকেল কলেজ</strong> — জীববিজ্ঞান</li>
-                <li><strong>ঢাকা বিশ্ববিদ্যালয়</strong> — ইংরেজি</li>
-            </ul>
-            <p>
-                সাধারণত এসএসসি বা এইচএসসির শিক্ষার্থীদের পক্ষে এসব প্রতিষ্ঠানের শিক্ষার্থীদের কাছ থেকে পড়া সম্ভব হয় না। স্পৃহা সেই সুযোগ এনে দিয়েছে।
-            </p>
-        </div>
-
-
+<section class="coming-soon">
+    <div class="coming-soon-inner">
+        <h1 class="heading">Available Soon</h1>
+        <h2 class="small-heading">Under Construction</h2>
     </div>
 </section>

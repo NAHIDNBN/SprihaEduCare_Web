@@ -251,6 +251,17 @@ li.nav-item {
     /*background: linear-gradient(to top, rgba(0, 24, 68, 0.7), rgba(0, 24, 68, 0.3));*/
     /*z-index: 2;*/
 }
+.overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 30px 0px #001844;
+    /*background-image: linear-gradient(to bottom, rgba(0, 59, 114, 0.2) 0%, rgba(0, 14, 28, 0.3) 100%);*/
+    /*background: linear-gradient(to top, rgba(0, 24, 68, 0.7), rgba(0, 24, 68, 0.3));*/
+    /*z-index: 2;*/
+}
 .carouselExampleIndicators {
 
 }
@@ -848,10 +859,11 @@ li.nav-item {
         padding: 4rem 2.5rem;
     }
     .hero-3 {
-        display: grid !important;
+        display: inline !important;
     }
     .aboutSpriha{
         width: 100% !important;
+        padding: 20px;
     }
     .teachersMain {
         width: 100% !important;
@@ -873,7 +885,7 @@ li.nav-item {
     }
     .teachersList{
         padding: 10px 20px !important;
-        font-size: 15px !important;
+        font-size: 13px !important;
     }
     .programsTitle {
         padding: 10px 50px !important;
@@ -916,5 +928,47 @@ li.nav-item {
     .sprihaLogo1 img {
         height: 50px;
         width: 50px;
+    }
+    .gallery div {
+        padding: 0px;
+    }
+
+        .gallery div img {
+            width: 60px;
+            border-radius: 3px;
+        }
+
+    .teachersMain {
+        padding: 20px !important;
+    }
+    .aboutSpriha h3{
+        font-size: 17px !important;
+    }
+    .aboutSpriha p{
+        font-size: 13px !important;
+    }
+    .gallery div img{
+        height: 160px !important;
+        width: 110px !important;
+    }
+    .executiveCommiteeMain{
+        padding: 25px !important;
+    }
+    .card-img-top{
+        height: 200px !important;
+    }
+    .card-body{
+        padding: 15px !important;
+    }
+    .card-title{
+        font-size: 15px;
+    }
+    .card p{
+        font-size: 13px;
+    }
+    .programBtn{
+        font-size: 13px;
+        padding: 5px !important;
+        width: 50% !important;
     }
 }

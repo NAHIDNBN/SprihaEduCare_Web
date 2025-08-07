@@ -154,19 +154,20 @@
 
     .teachersMain{
         width: 50%;
-        padding: 20px;
+        padding: 35px;
         background-color: #f1f1f1;
     }
 
     .teacherTitleMain{
         /* background: linear-gradient(-30deg, #2f74ba 50%, #001844); */
+        background: linear-gradient(-30deg, #2f74ba 52%, #001844 50%);
         padding: 10px 20px;
         text-align: center;
         color: #f1f1f1;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 600;
         width: auto;
-        border-radius: 50px;
+        border-radius: 0px;
         border: 3px solid #f1f1f1;
     }
 
@@ -227,6 +228,140 @@
     .programSlider{
 
     }
+
+
+    /* .................TeacherSlider.....................*/
+
+
+    .ourTeacher {
+        padding: 10px;
+               /*  margin-top: 200px;
+                text-align: center;
+                height: auto;
+                border-top: 1px solid gray;
+                border-bottom: 1px solid gray;
+                background-image: linear-gradient(to top, #051527, #023667); */
+            }
+
+            .title-partner {
+                font-size: 50px;
+                font-weight: 600;
+                color: #009cdc;
+                padding: 20px;
+            }
+
+            .gallery-wrap {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                /*margin: 10% auto;*/
+    }
+
+   /*  .gallery div img {
+        width: 175px;
+        border-radius: 5px;
+    } */
+
+    .gallery {
+        width: 1320px;
+        display: flex;
+        overflow-x: scroll;
+        /*animation: scroll 40s linear infinite;*/
+    }
+
+        .gallery div {
+            /* width: auto; */
+            /* display: grid;
+                grid-auto-columns: auto auto auto;
+                grid-gap: 20px; */
+            /* padding: 10px; */
+            flex: none;
+        }
+
+            .gallery div img {
+                width: 140px;
+                height: 180px;
+                border-radius: 0px;
+                /*filter: grayscale(100%);*/
+                transition: transform 0.5s;
+            }
+
+        .gallery::-webkit-scrollbar {
+            display: none;
+        }
+
+
+    #backBtn,
+    #nextBtn {
+        cursor: pointer;
+        margin: 35px;
+    }
+
+    .gallery div img:hover {
+        filter: grayscale(0);
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    /*...Sliding Images...*/
+    @@keyframes slide {
+        from
+
+    {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+
+    }
+
+    .logos {
+        overflow: hidden;
+        /*padding: 60px 0;*/
+        white-space: nowrap;
+        position: relative;
+    }
+
+        .logos:before,
+        .logos:after {
+            position: absolute;
+            top: 0;
+            /*width: 250px;*/
+            height: 100%;
+            content: "";
+            z-index: 2;
+        }
+
+        .logos:before {
+            left: 0;
+            /*background: linear-gradient(to left, rgba(255, 255, 255, 0), #009cdc);*/
+        }
+
+        .logos:after {
+            right: 0;
+            /*background: linear-gradient(to right, rgba(255, 255, 255, 0), #009cdc);*/
+        }
+
+        .logos:hover .logos-slide {
+            animation-play-state: paused;
+        }
+
+    .logos-slide {
+        display: inline-block;
+        animation: 60s slide infinite linear;
+    }
+
+    .ourTeacherImage {
+        margin-right: 15px;
+    }
+
+    @@media (max-width: 768px) {
+    }
+
+
+
 </style>
 
 
@@ -378,54 +513,544 @@
     </div>
     <div class="teachersMain">
         <div>
-            <h1 class="teacherTitleMain" style="color: #001844;">আমাদের সম্মানিত শিক্ষকমণ্ডলী</h1>
+            <h1 class="teacherTitleMain">আমাদের সম্মানিত শিক্ষকমণ্ডলী</h1>
         </div>
-        <div class="wrapper row">
-            <div class="image img1 col-md-2">
-                <img src="~/assets/images/10. Sabit Al Sami.jpg" class="img img1">
-            </div>
-            <div class="image img2 col-md-2">
-                <img src="~/assets/images/11. Arish.jpeg" class="img img2">
-            </div>
-            <div class="image img3 col-md-2">
-                <img src="~/assets/images/12. Fahim.jpeg" class="img img3">
-            </div>
-            <div class="image img4 col-md-2">
-                <img src="~/assets/images/13. Suhanur.jpeg" class="img img4">
-            </div>
-            <div class="image img5 col-md-2">
-                <img src="~/assets/images/14. Shupto.jpeg" class="img img5">
-            </div>
-            <div class="image img6 col-md-2">
-                <img src="~/assets/images/15. Shoeb.jpeg" class="img img6">
-            </div>
-            <div class="image img7 col-md-2">
-                <img src="~/assets/images/16. Mynurdoza.jpg" class="img img7">
-            </div>
-            <div class="image img8 col-md-2">
-                <img src="~/assets/images/17. Sazzad.jpeg" class="img img8">
-            </div>
-            <div class="image img9 col-md-2">
-                <img src="~/assets/images/18. Shadhin.jpeg" class="img img9">
-            </div>
-            <div class="image img10 col-md-2">
-                <img src="~/assets/images/19. Jihad.jpeg" class="img img10">
-            </div>
-            <div class="image img11 col-md-2">
-                <img src="~/assets/images/2. Aribullah.jpeg" class="img img11">
-            </div>
-            <div class="image img12 col-md-2">
-                <img src="~/assets/images/20. Arpon.jpeg" class="img img12">
-            </div>
-            <div class="d-flex justify-content-center" style="font-family: cursive; ">
-                <div class="title teachersList col-md-12 mt-4 ">
-                    শিক্ষক মণ্ডলীর তালিকা <i class="fa-solid fa-arrow-right"></i>
+        <div class="ourTeacher">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="gallery-wrap">
+                        @* <img src="~/assets/images/Icon ionic-ios-arrow-back.svg" id="backBtn" alt=""> *@
+                        <div class="gallery logos">
+                            <div class="logos-slide d-flex">
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/2. Aribullah.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/3. Win.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/4. Abid.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/5. Hussen.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/6. Basit.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/7. Shafat.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/8. Monjurul.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/9. Kayes.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/10. Sabit Al Sami.jpg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/11. Arish.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/12. Fahim.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/13. Suhanur.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/6. Basit.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/14. Shupto.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/15. Shoeb.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/16. Mynurdoza.jpg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                 <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/17. Sazzad.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/18. Shadhin.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/19. Jihad.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/20. Arpon.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/21. Kawsar.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/22. Jisan.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/8. Monjurul.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/9. Kayes.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/2. Aribullah.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/3. Win.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/4. Abid.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/5. Hussen.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/6. Basit.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/7. Shafat.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/8. Monjurul.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/9. Kayes.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                               @*  <span class="ourTeacherImage"><img src="~/assets/images/2. Aribullah.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/3. Win.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/4. Abid.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/5. Hussen.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/6. Basit.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/7. Shafat.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/8. Monjurul.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/9. Kayes.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/10. Sabit Al Sami.jpg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/11. Arish.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/12. Fahim.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/13. Suhanur.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/14. Shupto.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/15. Shoeb.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/16. Mynurdoza.jpg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/17. Sazzad.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/18. Shadhin.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/19. Jihad.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/20. Arpon.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/21. Kawsar.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/22. Jisan.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/23. Choton.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/24. Radhik.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/25. Abdullah.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/26. Rajibul.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/27. Kafi.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/28. Jibon.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/29. Sakib.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/30. Afnan.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/31. Tonmoy.jpg" alt=""></span> *@
+                            </div>
+                            <div class="logos-slide d-flex">
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/2. Aribullah.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/3. Win.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/4. Abid.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/5. Hussen.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/6. Basit.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/7. Shafat.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/8. Monjurul.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/9. Kayes.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/10. Sabit Al Sami.jpg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/11. Arish.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/12. Fahim.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/13. Suhanur.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/6. Basit.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/14. Shupto.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/15. Shoeb.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/16. Mynurdoza.jpg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/17. Sazzad.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/18. Shadhin.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/19. Jihad.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/20. Arpon.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/21. Kawsar.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/22. Jisan.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/8. Monjurul.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/9. Kayes.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/2. Aribullah.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/3. Win.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/4. Abid.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/5. Hussen.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/6. Basit.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/7. Shafat.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/8. Monjurul.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                <div class="ourTeacherImage" style="position: relative;">
+                                    <div>
+                                        <img src="~/assets/images/9. Kayes.jpeg" alt="">
+                                    </div>
+                                    <div class="overlay2">
+                                    </div>
+                                </div>
+                                @*  <span class="ourTeacherImage"><img src="~/assets/images/2. Aribullah.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/3. Win.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/4. Abid.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/5. Hussen.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/6. Basit.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/7. Shafat.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/8. Monjurul.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/9. Kayes.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/10. Sabit Al Sami.jpg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/11. Arish.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/12. Fahim.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/13. Suhanur.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/14. Shupto.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/15. Shoeb.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/16. Mynurdoza.jpg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/17. Sazzad.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/18. Shadhin.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/19. Jihad.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/20. Arpon.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/21. Kawsar.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/22. Jisan.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/23. Choton.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/24. Radhik.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/25. Abdullah.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/26. Rajibul.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/27. Kafi.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/28. Jibon.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/29. Sakib.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/30. Afnan.jpeg" alt=""></span>
+                                <span class="ourTeacherImage"><img src="~/assets/images/31. Tonmoy.jpg" alt=""></span> *@
+                            </div>
+                            <!-- <div>
+                                  <span><img src="Logos-04.jpg" alt=""></span>
+                                  <span><img src="Logos-05.jpg" alt=""></span>
+                                  <span><img src="Logos-06.jpg" alt=""></span>
+                                </div> -->
+                        </div>
+                        @* <img src="~/assets/images/Icon ionic-ios-arrow-back-1.svg" id="nextBtn" alt=""> *@
+                    </div>
+
                 </div>
             </div>
-            
-
-            @* <div class="text">
-            </div> *@
+        </div>
+        <div class="d-flex justify-content-center" style="font-family: cursive; ">
+            <a asp-area="" asp-controller="Home" asp-action="Teachers" style="text-decoration: none;">
+                <div class="title teachersList col-md-12 mt-4 ">
+                    শিক্ষকমণ্ডলীর তালিকা <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </a>
         </div>
     </div>
 </section>

@@ -304,6 +304,13 @@
         transform: scale(1.1);
     }
 
+    .programImg{
+        transition: transform 0.5s;
+    }
+    .programImg:hover{
+        transform: scale(1.05);
+    }
+
     /*...Sliding Images...*/
     @@keyframes slide {
         from
@@ -368,7 +375,7 @@
 
 <section class="hero">
     <div class="slideShow" style="position: relative;">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"@*  data-bs-interval="3000" *@>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="~/assets/images/Sub 01 (Mobile).webp" class="d-block w-100 h-100" alt="...">

@@ -144,13 +144,8 @@
     </div>
     <div class="mfooter" style="box-shadow: inset 0 0 5px 0px #bcbcbc">
         <div id="sub-footer">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
-                    @* <div class="col-md-5 d-flex align-items-center justify-content-center">
-                    <div class="copyright ">
-                    <p>&copy; Spriha Education care - All Rights Reserved</p>
-                    </div>
-                    </div> *@
                     @* <div class="col-md-12 d-flex justify-content-center">
                         <ul class="social-network d-flex flex-direction-nav fMenu">
                             <li class="nav-item">
@@ -161,14 +156,43 @@
                             </li>
                         </ul>
                     </div> *@
-                    <div class="col-md-12 d-flex align-items-center justify-content-center">
-                        <div class="logo">
-                            <a class="navbar-brand sprihaLogo1" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/assets/images/Logo 02.png" height="50;" alt="Logo"></a>
+                    <div class="col-md-4 d-flex align-items-center justify-content-center">
+                        <div class="row">
+                            <div class="logo col-md-12 logoFooter">
+                                <a class="navbar-brand sprihaLogo1" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/assets/images/Logo 02.png" height="50;" alt="Logo"><span>স্পৃহা এডুকেশন কেয়ার</span></a>
+                            </div>
+                            <div class="col-md-12 aboutSprihaFooter">
+                                @* <h3>স্পৃহা কী?</h3> *@
+                                <p>
+                                    <strong>স্পৃহা</strong> একটি <strong>নলেজ শেয়ারিং প্ল্যাটফর্ম</strong>, যেখানে বুয়েট, ঢাকা বিশ্ববিদ্যালয় ও মেডিকেল কলেজের শিক্ষার্থীরা তাঁদের অর্জিত জ্ঞান ও অভিজ্ঞতা ভাগ করে নিচ্ছেন এসএসসি ও এইচএসসি পর্যায়ের শিক্ষার্থীদের সঙ্গে।
+                                    আমাদের একমাত্র লক্ষ্য হলো শিক্ষার্থীর মৌলিক ভিত্তি গড়ে তোলা, যাতে তারা ভবিষ্যতের শিক্ষাজীবনে আর কষ্টে না পড়ে।
+                                </p>
+                            </div>
                         </div>
+                    </div>
+                    <div class="col-md-4 socialMedia">
+                        <h3>Social:</h3>
+                        <div>
+                            <ul style="padding: 0px;">
+                                <li><a href="#"><i class="fa-brands fa-facebook" style="margin-right: 5px;"></i>YouTube</a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram" style="margin-right: 5px;"></i>Instagram</a></li>
+                                <li><a href="#"><i class="fa-brands fa-youtube" style="margin-right: 5px;"></i>FaceBook</a></li>
+                                <li><a href="#"><i class="fa-brands fa-tiktok" style="margin-right: 5px;"></i>Tiktok</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 companyInfo">
+                        <h3>Company Info:</h3>
+                        
                         <div style="font-size: 15px;">
-                            <span style="color: #2f74ba ;font-weight: 600;">Mobile:</span><span style="color: #bcbcbc;"> +880 1341-629475 (WhatsApp Available)</span>
+                            <span style="color: #001844 ;font-weight: 600;">Mobile:</span><span style="color: gray;"> +880 1341-629475 (WhatsApp Available)</span>
                             <br />
-                            <span style="color: #2f74ba ; font-weight: 600;">Location:</span><span style="color: #bcbcbc;"> Mokhles Plaza (2nd Floor), Savar City Center, Savar, Dhaka - 1340</span>
+                            <span style="color: #001844 ; font-weight: 600;">Location:</span><span style="color: gray;"> Mokhles Plaza (2nd Floor), Savar City Center, Savar, Dhaka - 1340</span>
+                        </div>
+                    </div>
+                    <div class="col-md-12 d-flex align-items-center justify-content-center">
+                        <div class="copyright mt-3">
+                            <p style="color: #001844; font-weight: 600; margin-bottom: 0px;">Developed By - Thylet</p>
                         </div>
                     </div>
                 </div>

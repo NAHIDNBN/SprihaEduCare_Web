@@ -361,3 +361,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/SprihaEduCare_Web/.config/dotnet-tools.json
+/.gitignore
+/.gitignore
+/.gitignore

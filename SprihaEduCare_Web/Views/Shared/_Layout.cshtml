@@ -28,28 +28,51 @@
     <header class="abc header">
         <div class="navBg">
             <nav class="navBar" style="position: relative; top: 0;">
-                <div class="logo" style="display: flex; justify-content: center;align-items: center;">
-                    <a class="navbar-brand sprihaLogo" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/assets/images/Logo 01.png" height="75;" alt="Logo"><span style="position:relative; left: 20px;">স্পৃহা এডুকেশন কেয়ার</span> </a>
-
+                <div class="logo" style="display: flex; justify-content: center; align-items: center;">
+                    <a class="navbar-brand sprihaLogo" asp-area="" asp-controller="Home" asp-action="Index" style="display: flex; align-items: center;">
+                        <img src="~/assets/images/Logo 01.png" height="75" alt="Logo">
+                        <div style="display: flex; flex-direction: column; margin-left: 20px;">
+                            <div style="font-size: 30px; font-weight: bold;">
+                                স্পৃহা এডুকেশন কেয়ার
+                            </div>
+                            <div style="font-size: 14px; color: #001844;text-align: end;">
+                                স্থির লক্ষ্যে সুনিশ্চিত যাত্রা
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 <div class="menu">
                     <div>
                         <ul id="menuListMain" style="display: flex; margin-bottom: 0px !important;">
-                            <li class="nav-item" style="width: 200px;">
+                            <li class="nav-item" style="">
                                 <div class="arrow-right"></div>
                                 <a class="nav-link" asp-area="" asp-controller="Home" asp-action="AboutSpriha">স্পৃহা সম্পর্কে</a>
                             </li>
-                            <li class="nav-item" style="width: 200px;">
+                            <li class="nav-item" style="">
                                 <div class="arrow-right"></div>
                                 <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Programs"> প্রোগ্রাম</a>
                             </li>
-                            <li class="nav-item" style="width: 200px;">
+                            <li class="nav-item" style="">
                                 <div class="arrow-right"></div>
-                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Teachers">শিক্ষকমণ্ডলী</a>
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Teachers">শিক্ষক যাঁরা</a>
+                            </li>
+                            <li class="nav-item" style="">
+                                <div class="arrow-right"></div>
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="AdviceOfHSC">পরামর্শ</a>
+                            </li>
+                            <li class="nav-item" style="">
+                                <div class="arrow-right"></div>
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Questions">জিজ্ঞাসা</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="QuickTest" asp-action="Index">
+                                    @* <span style="font-size: 15px;">নিজের সক্ষমতা যাচাই করো</span><br /> *@
+                                    <span style="font-size: 20px; font-weight: 600;color: #001844;">কুইক টেস্ট</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    @* <div>
                         <ul id="menuListMain" style="display: flex; margin-bottom: 0px !important;">
                             <li class="nav-item" style="width: 200px;">
                                 <div class="arrow-right"></div>
@@ -61,17 +84,17 @@
                             </li>
                             <li class="nav-item" style="width: 200px;">
                                 <div class="arrow-right"></div>
-                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Questions">তোমার জিজ্ঞাসা</a>
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Questions">জিজ্ঞাসা</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> *@
                     
                 </div>
                 @* <div class="menu-icon" onclick="toggleMenu()">
             <i class="fa fa-bars" style="color: #ad1920;font-size:24px;"></i>
             </div> *@
             </nav>
-            <div class="quickTestCircle">
+            @* <div class="quickTestCircle">
                 <ul>
                     <li>
                         <a class="nav-link" asp-area="" asp-controller="QuickTest" asp-action="Index">
@@ -80,14 +103,68 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div> *@
 
         </div>
     </header>
     <header class="abc resHeader">
         <nav class="navBar" style="position: relative; top: 0;">
+            <div class="logo" style="display: flex; justify-content: center; align-items: center;">
+                <a class="navbar-brand sprihaLogo" asp-area="" asp-controller="Home" asp-action="Index" style="display: flex; align-items: center;">
+                    <img src="~/assets/images/Logo 01.png" height="75" alt="Logo">
+                    <div style="display: flex; flex-direction: column; margin-left: 20px;">
+                        <div style="font-size: 30px; font-weight: bold;">
+                            স্পৃহা এডুকেশন কেয়ার
+                        </div>
+                        <div style="font-size: 14px; color: #001844;text-align: end;">
+                            স্থির লক্ষ্যে সুনিশ্চিত যাত্রা
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="menu">
+                <div>
+                    <ul id="menuList">
+                        <li class="nav-item" style="width: 200px;">
+                            <div class="arrow-right"></div>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="AboutSpriha">স্পৃহা সম্পর্কে</a>
+                        </li>
+                        <li class="nav-item" style="width: 200px;">
+                            <div class="arrow-right"></div>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Programs"> প্রোগ্রাম</a>
+                        </li>
+                        <li class="nav-item" style="width: 200px;">
+                            <div class="arrow-right"></div>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Teachers">শিক্ষকমণ্ডলী</a>
+                        </li>
+                        <li class="nav-item" style="width: 200px;">
+                            <div class="arrow-right"></div>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="AdviceOfSSC">এস.এস.সি. পরীক্ষার পরামর্শ</a>
+                        </li>
+                        <li class="nav-item" style="width: 200px;">
+                            <div class="arrow-right"></div>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="AdviceOfHSC">এইচ.এস.সি. পরীক্ষার পরামর্শ</a>
+                        </li>
+                        <li class="nav-item" style="width: 200px;">
+                            <div class="arrow-right"></div>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Questions">জিজ্ঞাসা</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="QuickTest" asp-action="Index">
+                                <span style="font-size: 20px; font-weight: 600;color: #001844;">কুইক টেস্ট</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="menu-icon" onclick="toggleMenu()">
+                        <i class="fa fa-bars" style="color: #2f74ba ;font-size:24px;"></i>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <nav class="navBar" style="position: relative; top: 0;">
             <div class="logo">
-                <a class="navbar-brand sprihaLogoRes" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/assets/images/Logo 01.png" height="75;" alt="Logo"><span style="position:relative; left: 20px;">স্পৃহা এডুকেশন কেয়ার</span></a>
+                <a class="navbar-brand sprihaLogoRes" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/assets/images/Logo 01.png" height="75;" alt="Logo"><span style="position:relative; left: 20px;">স্পৃহা এডুকেশন কেয়ার</span> <span>স্থির লক্ষ্যে সুনিশ্চিত যাত্রা</span></a>
 
             </div>
             <ul id="menuList">

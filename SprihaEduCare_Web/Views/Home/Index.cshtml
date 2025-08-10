@@ -107,6 +107,7 @@
 
     .video-container {
         width: 70%;
+        /* height: 75vh; */
         box-shadow: inset 0 0 150px 0px #001844 !important;
         /* margin: 0 auto;  */
     }
@@ -280,8 +281,8 @@
         }
 
             .gallery div img {
-                width: 140px;
-                height: 180px;
+                width: 175px;
+                height: 220px;
                 border-radius: 0px;
                 /*filter: grayscale(100%);*/
                 transition: transform 0.5s;
@@ -522,7 +523,7 @@
     </div>
     <div class="teachersMain">
         <div>
-            <h1 class="teacherTitleMain">আমাদের সম্মানিত শিক্ষকমণ্ডলী</h1>
+            <h1 class="teacherTitleMain">আমাদের সম্মানিত শিক্ষক যাঁরা</h1>
         </div>
         <div class="ourTeacher">
             <div class="col-md-12">
@@ -1069,7 +1070,9 @@
 <section class="programs">
     <div class="d-flex justify-content-center container">
         <div class="row">
-            <div class="title programsTitle col-md-12 mb-4" style="font-family: cursive; ">প্রোগ্রামসমূহ:</div>
+            <a asp-area="" asp-controller="Home" asp-action="Programs">
+                <div class="title programsTitle col-md-12 mb-4" style="font-family: cursive; ">প্রোগ্রাম:</div>
+            </a>
         </div>
     </div>
     
@@ -1122,7 +1125,9 @@
 <section class="resPrograms">
     <div class="d-flex justify-content-center container">
         <div class="row">
-            <div class="title programsTitle col-md-12 mb-4" style="font-family: cursive; ">প্রোগ্রামসমূহ:</div>
+            <a asp-area="" asp-controller="Home" asp-action="Teachers">
+                <div class="title programsTitle col-md-12 mb-4" style="font-family: cursive; ">প্রোগ্রাম:</div>
+            </a>
         </div>
     </div>
     <div class="container programSlider">

@@ -58,7 +58,7 @@
                             </li>
                             <li class="nav-item" style="">
                                 <div class="arrow-right"></div>
-                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="AdviceOfHSC">পরামর্শ</a>
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Suggestions">পরামর্শ</a>
                             </li>
                             <li class="nav-item" style="">
                                 <div class="arrow-right"></div>
@@ -108,7 +108,7 @@
         </div>
     </header>
     <header class="abc resHeader">
-        <nav class="navBar" style="position: relative; top: 0;">
+        @* <nav class="navBar" style="position: relative; top: 0;">
             <div class="logo" style="display: flex; justify-content: center; align-items: center;">
                 <a class="navbar-brand sprihaLogo" asp-area="" asp-controller="Home" asp-action="Index" style="display: flex; align-items: center;">
                     <img src="~/assets/images/Logo 01.png" height="75" alt="Logo">
@@ -161,41 +161,46 @@
                 </div>
 
             </div>
-        </nav>
+        </nav> *@
         <nav class="navBar" style="position: relative; top: 0;">
-            <div class="logo">
-                <a class="navbar-brand sprihaLogoRes" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/assets/images/Logo 01.png" height="75;" alt="Logo"><span style="position:relative; left: 20px;">স্পৃহা এডুকেশন কেয়ার</span> <span>স্থির লক্ষ্যে সুনিশ্চিত যাত্রা</span></a>
-
+            <div class="logo" style="display: flex; justify-content: center; align-items: center;">
+                <a class="navbar-brand sprihaLogoRes" asp-area="" asp-controller="Home" asp-action="Index" style="display: flex; align-items: center;">
+                    <img src="~/assets/images/Logo 01.png" height="75" alt="Logo">
+                    <div style="display: flex; flex-direction: column; margin-left: 10px;">
+                        <div class ="titleSpriha">
+                            স্পৃহা এডুকেশন কেয়ার
+                        </div>
+                        <div class="sloganSpriha">
+                            স্থির লক্ষ্যে সুনিশ্চিত যাত্রা
+                        </div>
+                    </div>
+                </a>
             </div>
             <ul id="menuList">
-                <li class="nav-item" style="width: 200px;">
+                <li class="nav-item">
                     <div class="arrow-right"></div>
                     <a class="nav-link" asp-area="" asp-controller="Home" asp-action="AboutSpriha">স্পৃহা সম্পর্কে</a>
                 </li>
-                <li class="nav-item" style="width: 200px;">
+                <li class="nav-item">
                     <div class="arrow-right"></div>
                     <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Programs"> প্রোগ্রাম</a>
                 </li>
-                <li class="nav-item" style="width: 200px;">
+                <li class="nav-item">
                     <div class="arrow-right"></div>
-                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Teachers">শিক্ষকমণ্ডলী</a>
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Teachers">শিক্ষক যাঁরা</a>
                 </li>
-                <li class="nav-item" style="width: 200px;">
+                <li class="nav-item" style="">
                     <div class="arrow-right"></div>
-                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="AdviceOfSSC">এস.এস.সি. পরীক্ষার পরামর্শ</a>
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Suggestions">পরামর্শ</a>
                 </li>
-                <li class="nav-item" style="width: 200px;">
-                    <div class="arrow-right"></div>
-                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="AdviceOfHSC">এইচ.এস.সি. পরীক্ষার পরামর্শ</a>
-                </li>
-                <li class="nav-item" style="width: 200px;">
+                <li class="nav-item">
                     <div class="arrow-right"></div>
                     <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Questions">জিজ্ঞাসা</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" asp-area="" asp-controller="QuickTest" asp-action="Index">
                         @* <span style="font-size: 15px;">নিজের সক্ষমতা যাচাই করো</span><br /> *@
-                        <span style="font-size: 20px; font-weight: 600;color: #001844;">কুইক টেস্ট</span>
+                        <span style="font-size: 17px; font-weight: 600;color: #001844;">কুইক টেস্ট</span>
                     </a>
                 </li>
 
@@ -233,18 +238,30 @@
                             </li>
                         </ul>
                     </div> *@
-                    <div class="col-md-4 d-flex align-items-center justify-content-center">
+                    <div class="col-md-4 d-flex p-3 align-items-center justify-content-center">
                         <div class="row">
-                            <div class="logo col-md-12 logoFooter">
-                                <a class="navbar-brand sprihaLogo1" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/assets/images/Logo 02.png" height="50;" alt="Logo"><span>স্পৃহা এডুকেশন কেয়ার</span></a>
+                            <div class="logo col-md-12 logoFooter" style="display: flex; justify-content: center; align-items: center;">
+                                <a class="navbar-brand sprihaLogoFooter" asp-area="" asp-controller="Home" asp-action="Index" style="display: flex; align-items: center;">
+                                    <img src="~/assets/images/Logo 01.png" height="75" alt="Logo">
+                                    <div style="display: flex; flex-direction: column; margin-left: 10px;">
+                                        <div class="titleSprihaFooter">
+                                            স্পৃহা এডুকেশন কেয়ার
+                                        </div>
+                                        <div class="sloganSpriha">
+                                            স্থির লক্ষ্যে সুনিশ্চিত যাত্রা
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="col-md-12 aboutSprihaFooter">
-                                @* <h3>স্পৃহা কী?</h3> *@
+                            @* <div class="logo col-md-12 logoFooter">
+                                <a class="navbar-brand sprihaLogo1" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/assets/images/Logo 02.png" height="50;" alt="Logo"><span>স্পৃহা এডুকেশন কেয়ার</span></a>
+                            </div> *@
+                            @* <div class="col-md-12 aboutSprihaFooter">
                                 <p>
                                     <strong>স্পৃহা</strong> একটি <strong>নলেজ শেয়ারিং প্ল্যাটফর্ম</strong>, যেখানে বুয়েট, ঢাকা বিশ্ববিদ্যালয় ও মেডিকেল কলেজের শিক্ষার্থীরা তাঁদের অর্জিত জ্ঞান ও অভিজ্ঞতা ভাগ করে নিচ্ছেন এসএসসি ও এইচএসসি পর্যায়ের শিক্ষার্থীদের সঙ্গে।
                                     আমাদের একমাত্র লক্ষ্য হলো শিক্ষার্থীর মৌলিক ভিত্তি গড়ে তোলা, যাতে তারা ভবিষ্যতের শিক্ষাজীবনে আর কষ্টে না পড়ে।
                                 </p>
-                            </div>
+                            </div> *@
                         </div>
                     </div>
                     <div class="col-md-4 socialMedia">
@@ -261,14 +278,15 @@
                     <div class="col-md-4 companyInfo">
                         <h3>Company Info:</h3>
                         
-                        <div style="font-size: 15px;">
+                        <div style="font-size: 15px; text-align: center;">
                             <span style="color: #001844 ;font-weight: 600;">Mobile:</span><span style="color: gray;"> +880 1341-629475 (WhatsApp Available)</span>
                             <br />
                             <span style="color: #001844 ; font-weight: 600;">Location:</span><span style="color: gray;"> Mokhles Plaza (2nd Floor), Savar City Center, Savar, Dhaka - 1340</span>
                         </div>
                     </div>
-                    <div class="col-md-12 d-flex align-items-center justify-content-center">
-                        <div class="copyright">
+
+                    <div class="col-md-12 d-flex align-items-center justify-content-center mt-2">
+                        <div class="copyright ">
                             <p style="color: #001844; font-weight: 600; margin-bottom: 0px;">Developed By - Thylet</p>
                         </div>
                     </div>

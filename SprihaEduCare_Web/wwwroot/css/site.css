@@ -171,27 +171,51 @@ li.nav-item {
     border-bottom: 9px solid transparent;
     border-left: 9px solid red;
 }
-    /*......................Header Ends..........................*/
-    /*......................Common Starts..........................*/
-    /*.container {*/
-    /* max-width: 900px; */
-    /*margin: auto;
+.titleSpriha {
+    color: #2f74ba;
+    font-size: 30px;
+    font-weight: bold;
+}
+.titleSprihaFooter {
+    color: #2f74ba ;
+    font-size: 20px;
+    font-weight: bold;
+}
+.sloganSpriha {
+    font-size: 14px;
+    color: #001844;
+    text-align: end;
+}
+.sloganSprihaFooter {
+    font-size: 12px;
+    color: #001844;
+    text-align: end;
+}
+.sprihaLogoFooter img {
+    height: 75px;
+    width: 75px;
+}
+/*......................Header Ends..........................*/
+/*......................Common Starts..........................*/
+/*.container {*/
+/* max-width: 900px; */
+/*margin: auto;
     background: white;
     padding: 40px;
     border-radius: 0px;*/
-    /* border: 1px solid #1a73e8 ; */
-    /*box-shadow: 0 0 10px 0px #bcbcbc;
+/* border: 1px solid #1a73e8 ; */
+/*box-shadow: 0 0 10px 0px #bcbcbc;
     background: linear-gradient(to right, rgba(0, 24, 68, 0.3), rgba(188, 188, 188, 0.5));
 }*/
-    .titleMain {
-        background: linear-gradient(to bottom, rgba(0, 24, 68, 0.2), rgba(188, 188, 188, 0.3));
-        padding: 20px;
-        text-align: center;
-        color: #001844;
-        font-size: 20px;
-        font-weight: 600;
-        /*box-shadow: 0px 1px 10px rgba(0,24,68,0.4);*/
-    }
+.titleMain {
+    background: linear-gradient(to bottom, rgba(0, 24, 68, 0.2), rgba(188, 188, 188, 0.3));
+    padding: 20px;
+    text-align: center;
+    color: #001844;
+    font-size: 20px;
+    font-weight: 600;
+    /*box-shadow: 0px 1px 10px rgba(0,24,68,0.4);*/
+}
 .form-floating > .form-control {
     padding: 10px;
     border: 1px solid #bcbcbc;
@@ -747,6 +771,9 @@ li.nav-item {
 .resPrograms {
     display: none;
 }
+.resPrograms2 {
+    display: none;
+}
 .slideShow{
     display: block
 }
@@ -813,8 +840,8 @@ hr{
     }
 
     .sprihaLogoRes img {
-        height: 50px;
-        width: 50px;
+        height: 55px;
+        width: 55px;
     }
 
     .navBar {
@@ -915,6 +942,7 @@ hr{
 
     .hero-2 {
         display: grid;
+        height: auto;
     }
 
     .video-container {
@@ -1043,7 +1071,7 @@ hr{
     }
 
     .executiveCommiteeMain {
-        padding: 25px !important;
+        padding: 20px !important;
     }
 
     .card-img-top {
@@ -1095,28 +1123,53 @@ hr{
         position: relative !important;
     }
     .teacherName h2{
-        font-size: 14px !important;
+        font-size: 13px !important;
     }
     .subjectName h2 {
-        font-size: 12px !important;
+        font-size: 10px !important;
     }
     .teacherDetails {
         padding: 0 10px 30px !important;
     }
     .card{
-        height: 300px !important;
+        height: 275px !important;
     }
     .aboutTeacher h2 {
-        font-size: 12px !important;
+        font-size: 11px !important;
     }
     .headerColor{
-        height: 70px !important;
+        height: 60px !important;
     }
     .teacherImgBorder1{
-        height: 100px !important;
-        width: 100px !important;
+        height: 80px !important;
+        width: 80px !important;
     }
     .roundImgMargin {
         margin-top: -40px !important;
+    }
+    .titleSpriha {
+        font-size: 17px;
+    }
+    .titleSprihaFooter {
+        font-size: 17px;
+    }
+    .roundedBg {
+        padding: 5px 10px 5px !important;
+    }
+    .sloganSpriha {
+        font-size: 10px;
+    }
+    .sloganSprihaFooter {
+        font-size: 10px;
+    }
+    .sprihaLogoFooter img {
+        height: 55px;
+        width: 55px;
+    }
+    .resPrograms2{
+        display: block;
+    }
+    hr {
+        margin: 0.5rem 1rem;
     }
 }

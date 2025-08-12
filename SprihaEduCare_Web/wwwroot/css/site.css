@@ -253,14 +253,14 @@ li.nav-item {
 /*......................Home Page Starts..........................*/
 
 .hero {
-    height: 75vh;
+    height: 70vh;
     display: flex;
     /* background: linear-gradient(to bottom right, rgba(26, 115, 232, 0.4), rgba(255, 255, 255, 0.2)); */
     /* background: linear-gradient(to right, #001844, #3b5998); */
     /* padding: 10px; */
 }
 .hero-2 {
-    height: 75vh;
+    height: 80vh;
     display: flex;
 }
 .slideShow {
@@ -947,7 +947,7 @@ hr{
 
     .video-container {
         width: 100% !important;
-        height: 40vh;
+        height: 35vh;
     }
 
     .admissionForm {

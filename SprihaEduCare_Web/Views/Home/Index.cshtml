@@ -9,23 +9,15 @@
     .carousel-item img {
         height: 100%;
         object-fit: initial;
-        /* box-shadow: inset 0 0 5px 0 #bcbcbc; */
     }
 
     .carousel-item {
-        /* border: 1px solid #bcbcbc; */
-        /* box-shadow: inset 0 0 5px 0 #bcbcbc; */
     }
 
-
         .carousel-item img {
-            /* box-shadow: inset 0 0 5px 0 #bcbcbc; */
-            /* background: linear-gradient(to top, #bcbcbc, #ffffff); */
         }
 
     .active {
-        /* background: linear-gradient(to top, #bcbcbc, #ffffff); */
-        /* box-shadow: inset 0 0 5px 0 #bcbcbc; */
     }
 
     .carousel-indicators {
@@ -35,35 +27,27 @@
 
         .carousel-indicators [data-bs-target] {
             background-color: white;
-        }
-
-        .carousel-indicators [data-bs-target] {
-            /* background-color: #004B5F; */
             padding: 6px;
             border-radius: 50%;
-            height: 0px;
-            width: 0px;
+            height: 0;
+            width: 0;
         }
 
         .carousel-indicators .active {
             padding: 7px !important;
         }
 
-    .carousel-control-next-icon, .carousel-control-prev-icon {
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
         width: 3rem;
         height: 3rem;
     }
 
-    .carousel-control-next, .carousel-control-prev {
+    .carousel-control-next,
+    .carousel-control-prev {
         width: 5%;
     }
-    /* .carousel-control-prev-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23001844' viewBox='0 0 8 8'%3e%3cpath d='M5.5 0L4.79.71 1.5 4l3.29 3.29.71.71 1-1L.5 4l3-3z'/%3e%3c/svg%3e");
-        }
 
-        .carousel-control-next-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23001844' viewBox='0 0 8 8'%3e%3cpath d='M2.5 0l-.71.71L5.09 4l-3.3 3.29.71.71L6.5 4 2.5 0z'/%3e%3c/svg%3e");
-        } */
     .hero-3 {
         display: flex;
     }
@@ -75,11 +59,8 @@
         text-align: center;
         color: #001844;
         font-size: 20px;
-        /* box-shadow: inset 0px 0px 3px 0px #1a73e8; */
-        /* box-shadow: 0px 3px 3px rgba(119,118,121,.5); */
-        /* box-shadow: 0px 1px 10px rgba(0,24,68,0.4); */
         display: flex;
-        flex-direction: column; /* stack elements vertically */
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
@@ -108,9 +89,7 @@
 
     .video-container {
         width: 70%;
-        /* height: 75vh; */
         box-shadow: inset 0 0 150px 0px #001844 !important;
-        /* margin: 0 auto;  */
     }
 
         .video-container iframe {
@@ -118,10 +97,7 @@
             height: 100%;
         }
 
-    .ytp-cued-thumbnail-overlay-image {
-        box-shadow: inset 0 0 150px 0px #001844 !important;
-    }
-
+    .ytp-cued-thumbnail-overlay-image,
     .ytp-cued-thumbnail-overlay {
         box-shadow: inset 0 0 150px 0px #001844 !important;
     }
@@ -135,7 +111,12 @@
         height: 100%;
         width: 100%;
         padding: 10px;
+        transition: transform 0.5s;
     }
+
+        .programImg:hover {
+            transform: scale(1.05);
+        }
 
     .programsTitle {
         background: linear-gradient(-30deg, #2f74ba 50%, #001844);
@@ -147,12 +128,7 @@
         width: auto;
         border-radius: 50px;
         border: 3px solid #f1f1f1;
-        /* box-shadow: inset 0px 0px 3px 0px #1a73e8; */
-        /* box-shadow: 0px 3px 3px rgba(119, 118, 121, .5); */
-        /* box-shadow: 0px 1px 10px rgba(0, 24, 68, 0.4);*/
     }
-
-
 
     .teachersMain {
         width: 50%;
@@ -161,7 +137,6 @@
     }
 
     .teacherTitleMain {
-        /* background: linear-gradient(-30deg, #2f74ba 50%, #001844); */
         background: linear-gradient(-30deg, #2f74ba 52%, #001844 50%);
         padding: 10px 20px;
         text-align: center;
@@ -169,7 +144,7 @@
         font-size: 20px;
         font-weight: 600;
         width: auto;
-        border-radius: 0px;
+        border-radius: 0;
         border: 3px solid #f1f1f1;
     }
 
@@ -203,7 +178,7 @@
     }
 
     .nav-btn {
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0, 0, 0, 0.5);
         color: white;
         border: none;
         padding: 10px;
@@ -211,7 +186,6 @@
     }
 
     .teachersList {
-        /* background: linear-gradient(-30deg, #2f74ba 50%, #001844); */
         border: 2px solid white;
         padding: 10px 50px;
         text-align: center;
@@ -219,7 +193,7 @@
         font-size: 17px;
         font-weight: 600;
         width: auto;
-        border-radius: 0px;
+        border-radius: 0;
     }
 
     .resPrograms {
@@ -227,21 +201,8 @@
         box-shadow: inset 0 0 50px 0px #bcbcbc;
     }
 
-    .programSlider {
-    }
-
-
-    /* .................TeacherSlider.....................*/
-
-
     .ourTeacher {
         padding: 10px;
-        /*  margin-top: 200px;
-                    text-align: center;
-                    height: auto;
-                    border-top: 1px solid gray;
-                    border-bottom: 1px solid gray;
-                    background-image: linear-gradient(to top, #051527, #023667); */
     }
 
     .title-partner {
@@ -255,42 +216,28 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        /*margin: 10% auto;*/
     }
-
-    /*  .gallery div img {
-            width: 175px;
-            border-radius: 5px;
-        } */
 
     .gallery {
         width: 1320px;
         display: flex;
         overflow-x: scroll;
-        /*animation: scroll 40s linear infinite;*/
     }
 
         .gallery div {
-            /* width: auto; */
-            /* display: grid;
-                    grid-auto-columns: auto auto auto;
-                    grid-gap: 20px; */
-            /* padding: 10px; */
             flex: none;
         }
 
             .gallery div img {
                 width: 175px;
                 height: 220px;
-                border-radius: 0px;
-                /*filter: grayscale(100%);*/
+                border-radius: 0;
                 transition: transform 0.5s;
             }
 
         .gallery::-webkit-scrollbar {
             display: none;
         }
-
 
     #backBtn,
     #nextBtn {
@@ -304,28 +251,8 @@
         transform: scale(1.1);
     }
 
-    .programImg {
-        transition: transform 0.5s;
-    }
-
-        .programImg:hover {
-            transform: scale(1.05);
-        }
-
-    /*...Sliding Images...*/
-    @@keyframes slide {
-        from {
-            transform: translateX(0);
-        }
-
-        to {
-            transform: translateX(-100%);
-        }
-    }
-
     .logos {
         overflow: hidden;
-        /*padding: 60px 0;*/
         white-space: nowrap;
         position: relative;
     }
@@ -334,7 +261,6 @@
         .logos:after {
             position: absolute;
             top: 0;
-            /*width: 250px;*/
             height: 100%;
             content: "";
             z-index: 2;
@@ -342,12 +268,10 @@
 
         .logos:before {
             left: 0;
-            /*background: linear-gradient(to left, rgba(255, 255, 255, 0), #009cdc);*/
         }
 
         .logos:after {
             right: 0;
-            /*background: linear-gradient(to right, rgba(255, 255, 255, 0), #009cdc);*/
         }
 
         .logos:hover .logos-slide {
@@ -363,21 +287,29 @@
         margin-right: 15px;
     }
 
-    @@media (max-width: 768px) {
+    @@keyframes slide {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
     }
 
+    @@media (max-width: 768px) {
+    }
 </style>
-
 
 <section class="hero">
     <div class="slideShow" style="position: relative;">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="~/assets/images/slides/slide new mobile 01.webp" class="d-block w-100 h-100" alt="...">
+                    <img src="~/assets/images/slides/slide new.webp" class="d-block w-100 h-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="~/assets/images/slides/slide new mobile 02.webp" class="d-block w-100 h-100" alt="...">
+                    <img src="~/assets/images/slides/slide new 02.webp" class="d-block w-100 h-100" alt="...">
                 </div>
                 <div class="carousel-item">
                     <img src="~/assets/images/Sub 01 (Mobile).webp" class="d-block w-100 h-100" alt="...">
@@ -392,23 +324,16 @@
                     <img src="~/assets/images/Sub 04 (Mobile).webp" class="d-block w-100 h-100" alt="...">
                 </div>
             </div>
-            @* <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button> *@
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
             </div>
         </div>
-        <div class="overlay">
-        </div>
+        <div class="overlay"></div>
     </div>
     <div class="slideShowRes" style="position: relative;">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
@@ -417,13 +342,17 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+
             </div>
             <div class="carousel-inner">
+               
                 <div class="carousel-item active">
-                    <img src="~/assets/images/slides/slide new.webp" class="d-block w-100 h-100" alt="...">
+                    <img src="~/assets/images/slides/slide new mobile 01.webp" class="d-block w-100 h-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="~/assets/images/slides/slide new 02.webp" class="d-block w-100 h-100" alt="...">
+                    <img src="~/assets/images/slides/slide new mobile 02.webp" class="d-block w-100 h-100" alt="...">
                 </div>
                 <div class="carousel-item">
                     <img src="~/assets/images/Slide Mobile 01.webp" class="d-block w-100 h-100" alt="...">
@@ -438,43 +367,28 @@
                     <img src="~/assets/images/Slide Mobile 04.webp" class="d-block w-100 h-100" alt="...">
                 </div>
             </div>
-            @* <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button> *@
         </div>
-
-        <div class="overlay">
-        </div>
+        <div class="overlay"></div>
     </div>
-
-
-
 </section>
+
 <section class="hero-2">
     <div class="video-container">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/VRp8KUaExuY?si=3bErSdg9m3usBIZY"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-        </iframe>
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
     <div class="admissionForm">
         <div class="admissionFromInner">
-
-            <h2 style="color: white;text-align: center;margin-bottom: 2rem;">
+            <h2 style="color: white; text-align: center; margin-bottom: 2rem;">
                 ফ্রি ক্লাসের জন্য আবেদন
             </h2>
-
             <form method="post" asp-controller="Home" asp-action="admissionForm">
                 <div style="border: 1px solid #bcbcbc;">
                     <div class="form-floating">
                         <input type="text" class="form-control" id="userName" placeholder="Name">
                         <span class="warning"></span>
-
                         <label for="floatingInput">শিক্ষার্থীর নাম:</label>
                     </div>
                     <div class="form-floating">
@@ -485,48 +399,42 @@
                     <div class="form-floating">
                         <input type="email" class="form-control" id="userEmail" placeholder="email@example.com">
                         <span class="warning"></span>
-
                         <label for="floatingInput">পিতা/মাতার নাম:</label>
                     </div>
                     <div class="form-floating">
                         <input type="email" class="form-control" id="userEmail" placeholder="email@example.com">
                         <span class="warning"></span>
-
                         <label for="floatingInput">ঠিকানা:</label>
                     </div>
                     <div class="form-floating">
                         <input type="email" class="form-control" id="userEmail" placeholder="email@example.com">
                         <span class="warning"></span>
-
                         <label for="floatingInput">স্কুল/কলেজের নাম:</label>
                     </div>
                     <div class="form-floating">
                         <input type="email" class="form-control" id="userEmail" placeholder="email@example.com">
                         <span class="warning"></span>
-
                         <label for="floatingInput">ইমেইল আইডি:</label>
                     </div>
                 </div>
-
-
-                <button type="submit" class="submitBtn mt-4" onclick="saveScrollPosition()">সাবমিট </button>
+                <button type="submit" class="submitBtn mt-4" onclick="saveScrollPosition()">সাবমিট</button>
             </form>
-
         </div>
     </div>
-     
 </section>
+
 <hr />
+
 <section class="hero-3">
     <div class="aboutSpriha">
         <h3>স্পৃহা কী ও কেন</h3>
         <p>
-            সরকারের পরিসংখ্যান দিয়ে এই পটভূমি শুরু করা যাক। বিশ্বের সবচেয়ে </<br />
-            শান্তিপূর্ণ (গ্লোবাল পিস ইনডেক্স-২০২৪ অনুসারে) দেশের তালিকায় শীর্ষ  </<br />
-            দুই দেশ আইসল্যান্ড এবং আয়ারল্যান্ডে জনসংখ্যা ৩ লাখ ও ৫৩ লাখ।  </<br />
-            মজার ব্যাপার হলো, এই দুই দেশে যে পরিমাণ জনসংখ্যা আছে, </<br />
-            এর চেয়ে বেশি শিক্ষার্থী আছে বাংলাদেশের মাধ্যমিক পর্যায়ের (ষষ্ঠ থেকে </<br />
-            দশম শ্রেণি পর্যন্ত) বিদ্যালয়গুলোয়। এই সংখ্যা ৮১ লাখের বেশি। আর </<br />
+            সরকারের পরিসংখ্যান দিয়ে এই পটভূমি শুরু করা যাক। বিশ্বের সবচেয়ে<br />
+            শান্তিপূর্ণ (গ্লোবাল পিস ইনডেক্স-২০২৪ অনুসারে) দেশের তালিকায় শীর্ষ<br />
+            দুই দেশ আইসল্যান্ড এবং আয়ারল্যান্ডে জনসংখ্যা ৩ লাখ ও ৫৩ লাখ।<br />
+            মজার ব্যাপার হলো, এই দুই দেশে যে পরিমাণ জনসংখ্যা আছে,<br />
+            এর চেয়ে বেশি শিক্ষার্থী আছে বাংলাদেশের মাধ্যমিক পর্যায়ের (ষষ্ঠ থেকে<br />
+            দশম শ্রেণি পর্যন্ত) বিদ্যালয়গুলোয়। এই সংখ্যা ৮১ লাখের বেশি। আর<br />
             এইচএসসিতে (একাদশ ও দ্বাদশ) শিক্ষার্থীর সংখ্যা প্রায় ২৫ লাখ। <a href="~/Home/AboutSpriha">...আরও পড়ুন</a>
         </p>
     </div>
@@ -538,397 +446,48 @@
             <div class="col-md-12">
                 <div class="row">
                     <div class="gallery-wrap">
-                        @* <img src="~/assets/images/Icon ionic-ios-arrow-back.svg" id="backBtn" alt=""> *@
                         <div class="gallery logos">
                             <div class="logos-slide d-flex">
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Abid.webp" class="programImg">
+                                @foreach (var teacher in new[] {
+                                                                "Abid", "Afnan Buet", "Aribullah Buet", "Arish", "Fatin Hasnat buet",
+                                                                "Rajibul Du", "Asaduzzaman Du", "Fahim Du", "Arpon", "Joynul Buet",
+                                                                "Hossain", "Imtiaz", "Isfaqul", "Mainor buet", "Hasibul Du",
+                                                                "Kawsar Du", "Radhik DU", "Jihad Du", "Monjurul", "Nabir Buet",
+                                                                "Roxy Buet", "Sabit", "Kyes", "Arpon", "Shafat", "Shakib", "Umar Du"
+                                                                })
+                                {
+                                    <div class="ourTeacherImage" style="position: relative;">
+                                        <div>
+                                            <img src="~/assets/images/teacher's img/@(teacher).webp" class="programImg">
+                                        </div>
+                                        <div class="overlay2"></div>
                                     </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Afnan Buet.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Aribullah Buet.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Arish.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Fatin Hasnat buet.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Rajibul Du.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Asaduzzaman Du.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Fahim Du.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Arpon.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Joynul  Buet.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Hossain.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Imtiaz.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Isfaqul.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Mainor buet.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Hasibul Du.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Kawsar Du.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Radhik DU.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Jihad Du.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Monjurul.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Nabir Buet.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Roxy Buet.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Sabit.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Kyes.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Arpon.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Shafat.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Shakib.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Umar Du.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
+                                }
                             </div>
                             <div class="logos-slide d-flex">
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Abid.webp" class="programImg">
+                                @foreach (var teacher in new[] {
+                                                                "Abid", "Afnan Buet", "Aribullah Buet", "Arish", "Fatin Hasnat buet",
+                                                                "Rajibul Du", "Asaduzzaman Du", "Fahim Du", "Arpon", "Joynul Buet",
+                                                                "Hossain", "Imtiaz", "Isfaqul", "Mainor buet", "Hasibul Du",
+                                                                "Kawsar Du", "Radhik DU", "Jihad Du", "Monjurul", "Nabir Buet",
+                                                                "Roxy Buet", "Sabit", "Kyes", "Arpon", "Shafat", "Shakib", "Umar Du"
+                                                                })
+                                {
+                                    <div class="ourTeacherImage" style="position: relative;">
+                                        <div>
+                                            <img src="~/assets/images/teacher's img/@(teacher).webp" class="programImg">
+                                        </div>
+                                        <div class="overlay2"></div>
                                     </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Afnan Buet.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Aribullah Buet.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Arish.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Fatin Hasnat buet.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Rajibul Du.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Asaduzzaman Du.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Fahim Du.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Arpon.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Joynul  Buet.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Hossain.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Imtiaz.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Isfaqul.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Mainor buet.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Hasibul Du.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Kawsar Du.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Radhik DU.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Jihad Du.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Monjurul.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Nabir Buet.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Roxy Buet.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Sabit.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Kyes.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Arpon.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Shafat.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Shakib.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
-                                <div class="ourTeacherImage" style="position: relative;">
-                                    <div>
-                                        <img src="~/assets/images/teacher's img/Umar Du.webp" class="programImg">
-                                    </div>
-                                    <div class="overlay2">
-                                    </div>
-                                </div>
+                                }
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="d-flex justify-content-center" style="font-family: cursive; ">
+            <div class="d-flex justify-content-center" style="font-family: cursive;">
                 <a asp-area="" asp-controller="Home" asp-action="Teachers" style="text-decoration: none;">
-                    <div class="title teachersList col-md-12 mt-4 ">
+                    <div class="title teachersList col-md-12 mt-4">
                         বিস্তারিত <i class="fa-solid fa-arrow-right"></i>
                     </div>
                 </a>
@@ -936,121 +495,50 @@
         </div>
     </div>
 </section>
-<hr />
 
+<hr />
 
 <section class="programs">
     <div class="d-flex justify-content-center container">
         <div class="row">
             <a asp-area="" asp-controller="Home" asp-action="Programs">
-                <div class="title programsTitle col-md-12 mb-4" style="font-family: cursive; ">প্রোগ্রাম</div>
+                <div class="title programsTitle col-md-12 mb-4" style="font-family: cursive;">প্রোগ্রাম</div>
             </a>
         </div>
     </div>
-
-
     <div class="container">
         <div class="row">
-            <div class="col-md-3 my-3">
-                <a href="https://wa.me/8801341629475?text=Hello%2C%20I%20want%20to%20know%20more%20about%20দিপ্ত%20নবম" target="_blank">
-                    <img src="~/assets/images/Subject Wise 01.webp" class="programImg">
-                </a>
-            </div>
-            <div class="col-md-3 my-3">
-                <a href="https://wa.me/8801341629475?text=Hello%2C%20I%20want%20to%20know%20more%20about%20দিপ্ত%20নবম%20২" target="_blank">
-                    <img src="~/assets/images/Subject Wise 02.webp" class="programImg">
-                </a>
-            </div>
-            <div class="col-md-3 my-3">
-                <a href="https://wa.me/8801341629475?text=Hello%2C%20I%20want%20to%20know%20more%20about%20ইস্ফুরিত%20দশম" target="_blank">
-
-                    <img src="~/assets/images/Subject Wise 03.webp" class="programImg">
-                </a>
-            </div>
-            <div class="col-md-3 my-3">
-                <a href="https://wa.me/8801341629475?text=Hello%2C%20I%20want%20to%20know%20more%20about%20ইস্ফুরিত%20দশম%20২" target="_blank">
-
-                    <img src="~/assets/images/Subject Wise 04.webp" class="programImg">
-                </a>
-            </div>
-            <div class="col-md-3 my-3">
-                <a href="https://wa.me/8801341629475?text=Hello%2C%20I%20want%20to%20know%20more%20about%20প্রদিপ্ত%20একাদশ" target="_blank">
-
-                    <img src="~/assets/images/Subject Wise 05.webp" class="programImg">
-                </a>
-            </div>
-            <div class="col-md-3 my-3">
-                <a href="https://wa.me/8801341629475?text=Hello%2C%20I%20want%20to%20know%20more%20about%20প্রদিপ্ত%20একাদশ%20২" target="_blank">
-
-                    <img src="~/assets/images/Subject Wise 06.webp" class="programImg">
-                </a>
-            </div>
-            <div class="col-md-3 my-3">
-                <a href="https://wa.me/8801341629475?text=Hello%2C%20I%20want%20to%20know%20more%20about%20বিকশিত%20দাদশ" target="_blank">
-
-                    <img src="~/assets/images/Subject Wise 07.webp" class="programImg">
-                </a>
-            </div>
-            <div class="col-md-3 my-3">
-                <a href="https://wa.me/8801341629475?text=Hello%2C%20I%20want%20to%20know%20more%20about%20বিকশিত%20দাদশ%20২" target="_blank">
-                    <img src="~/assets/images/Subject Wise 08.webp" class="programImg">
-                </a>
-            </div>
+            @for (int i = 1; i <= 8; i++)
+            {
+                <div class="col-md-3 my-3">
+                    <a href="https://wa.me/8801341629475?text=Hello%2C%20I%20want%20to%20know%20more%20about%20@(i == 1 || i == 2 ? "দিপ্ত নবম" : i == 3 || i == 4 ? "ইস্ফুরিত দশম" : i == 5 || i == 6 ? "প্রদিপ্ত একাদশ" : "বিকশিত দাদশ")@(i % 2 == 0 ? " ২" : "")" target="_blank">
+                        <img src="~/assets/images/Subject Wise 0@(i).webp" class="programImg">
+                    </a>
+                </div>
+            }
         </div>
     </div>
 </section>
+
 <section class="resPrograms">
     <div class="d-flex justify-content-center container">
         <div class="row">
             <a asp-area="" asp-controller="Home" asp-action="Programs">
-                <div class="title programsTitle col-md-12 mb-4" style="font-family: cursive; ">প্রোগ্রাম</div>
+                <div class="title programsTitle col-md-12 mb-4" style="font-family: cursive;">প্রোগ্রাম</div>
             </a>
         </div>
     </div>
     <div class="container programSlider">
-
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <a href="https://wa.me/8801341629475?text=Hello%2C%20I%20want%20to%20know%20more%20about%20দিপ্ত%20নবম" target="_blank">
-                        <img src="~/assets/images/Subject Wise 01.webp" class="programImg">
-                    </a>
-                </div>
-                <div class="carousel-item">
-                    <a href="https://wa.me/8801341629475?text=Hello%2C%20I%20want%20to%20know%20more%20about%20দিপ্ত%20নবম%20২" target="_blank">
-                        <img src="~/assets/images/Subject Wise 02.webp" class="programImg">
-                    </a>
-                </div>
-                <div class="carousel-item">
-                    <a href="https://wa.me/8801341629475?text=Hello%2C%20I%20want%20to%20know%20more%20about%20ইস্ফুরিত%20দশম" target="_blank">
-                        <img src="~/assets/images/Subject Wise 03.webp" class="programImg">
-                    </a>
-                </div>
-                <div class="carousel-item">
-                    <a href="https://wa.me/8801341629475?text=Hello%2C%20I%20want%20to%20know%20more%20about%20ইস্ফুরিত%20দশম%20২" target="_blank">
-                        <img src="~/assets/images/Subject Wise 04.webp" class="programImg">
-                    </a>
-                </div>
-                <div class="carousel-item">
-                    <a href="https://wa.me/8801341629475?text=Hello%2C%20I%20want%20to%20know%20more%20about%20প্রদিপ্ত%20একাদশ" target="_blank">
-                        <img src="~/assets/images/Subject Wise 05.webp" class="programImg">
-                    </a>
-                </div>
-                <div class="carousel-item">
-                    <a href="https://wa.me/8801341629475?text=Hello%2C%20I%20want%20to%20know%20more%20about%20প্রদিপ্ত%20একাদশ%20২" target="_blank">
-                        <img src="~/assets/images/Subject Wise 06.webp" class="programImg">
-                    </a>
-                </div>
-                <div class="carousel-item">
-                    <a href="https://wa.me/8801341629475?text=Hello%2C%20I%20want%20to%20know%20more%20about%20বিকশিত%20দাদশ" target="_blank">
-                        <img src="~/assets/images/Subject Wise 07.webp" class="programImg">
-                    </a>
-                </div>
-                <div class="carousel-item">
-                    <a href="https://wa.me/8801341629475?text=Hello%2C%20I%20want%20to%20know%20more%20about%20বিকশিত%20দাদশ%20২" target="_blank">
-                        <img src="~/assets/images/Subject Wise 08.webp" class="programImg">
-                    </a>
-                </div>
+                @for (int i = 1; i <= 8; i++)
+                {
+                    <div class="carousel-item @(i == 1 ? "active" : "")">
+                        <a href="https://wa.me/8801341629475?text=Hello%2C%20I%20want%20to%20know%20more%20about%20@(i == 1 || i == 2 ? "দিপ্ত নবম" : i == 3 || i == 4 ? "ইস্ফুরিত দশম" : i == 5 || i == 6 ? "প্রদিপ্ত একাদশ" : "বিকশিত দাদশ")@(i % 2 == 0 ? " ২" : "")" target="_blank">
+                            <img src="~/assets/images/Subject Wise 0@(i).webp" class="programImg">
+                        </a>
+                    </div>
+                }
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -1061,17 +549,11 @@
                 <span class="visually-hidden">Next</span>
             </button>
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                @for (int i = 0; i < 8; i++)
+                {
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="@i" @(i == 0 ? "class=active aria-current=true" : "") aria-label="Slide @(i + 1)"></button>
+                }
             </div>
         </div>
     </div>
 </section>
-
-

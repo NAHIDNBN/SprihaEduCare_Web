@@ -58,6 +58,14 @@ namespace SprihaEduCare_Web.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult admissionForm(string userName, string phoneNumber, string? guardianName, string? userAddress, string? institutionName, string? userEmail)
+        {
+            _logger.LogInformation("New free class application received for: {UserName}, Phone: {PhoneNumber}", userName, phoneNumber);
+            TempData["SuccessMessage"] = "আপনার আবেদনটি সফলভাবে জমা হয়েছে। আমরা শীঘ্রই আপনার সাথে যোগাযোগ করব।";
+            return RedirectToAction("Index");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

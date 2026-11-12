@@ -384,37 +384,37 @@
             <h2 style="color: white; text-align: center; margin-bottom: 2rem;">
                 ফ্রি ক্লাসের জন্য আবেদন
             </h2>
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success text-center mb-3" role="alert">
+                    @TempData["SuccessMessage"]
+                </div>
+            }
             <form method="post" asp-controller="Home" asp-action="admissionForm">
                 <div style="border: 1px solid #bcbcbc;">
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="userName" placeholder="Name">
-                        <span class="warning"></span>
-                        <label for="floatingInput">শিক্ষার্থীর নাম:</label>
+                        <input type="text" class="form-control" id="userName" name="userName" placeholder="Name" required>
+                        <label for="userName">শিক্ষার্থীর নাম:</label>
                     </div>
                     <div class="form-floating">
-                        <input type="tel" class="form-control" id="phoneNumber" placeholder="Mobile">
-                        <span class="warning"></span>
-                        <label for="floatingInput">মোবাইল নম্বর:</label>
+                        <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Mobile" required>
+                        <label for="phoneNumber">মোবাইল নম্বর:</label>
                     </div>
                     <div class="form-floating">
-                        <input type="email" class="form-control" id="userEmail" placeholder="email@example.com">
-                        <span class="warning"></span>
-                        <label for="floatingInput">পিতা/মাতার নাম:</label>
+                        <input type="text" class="form-control" id="guardianName" name="guardianName" placeholder="Guardian Name">
+                        <label for="guardianName">পিতা/মাতার নাম:</label>
                     </div>
                     <div class="form-floating">
-                        <input type="email" class="form-control" id="userEmail" placeholder="email@example.com">
-                        <span class="warning"></span>
-                        <label for="floatingInput">ঠিকানা:</label>
+                        <input type="text" class="form-control" id="userAddress" name="userAddress" placeholder="Address">
+                        <label for="userAddress">ঠিকানা:</label>
                     </div>
                     <div class="form-floating">
-                        <input type="email" class="form-control" id="userEmail" placeholder="email@example.com">
-                        <span class="warning"></span>
-                        <label for="floatingInput">স্কুল/কলেজের নাম:</label>
+                        <input type="text" class="form-control" id="institutionName" name="institutionName" placeholder="School/College Name">
+                        <label for="institutionName">স্কুল/কলেজের নাম:</label>
                     </div>
                     <div class="form-floating">
-                        <input type="email" class="form-control" id="userEmail" placeholder="email@example.com">
-                        <span class="warning"></span>
-                        <label for="floatingInput">ইমেইল আইডি:</label>
+                        <input type="email" class="form-control" id="userEmail" name="userEmail" placeholder="email@example.com">
+                        <label for="userEmail">ইমেইল আইডি:</label>
                     </div>
                 </div>
                 <button type="submit" class="submitBtn mt-4" onclick="saveScrollPosition()">সাবমিট</button>
@@ -511,7 +511,7 @@
             @for (int i = 1; i <= 8; i++)
             {
                 <div class="col-md-3 my-3">
-                    <a href="https://wa.me/8801341629475?text=Hello%2C%20I%20want%20to%20know%20more%20about%20@(i == 1 || i == 2 ? "দিপ্ত নবম" : i == 3 || i == 4 ? "ইস্ফুরিত দশম" : i == 5 || i == 6 ? "প্রদিপ্ত একাদশ" : "বিকশিত দাদশ")@(i % 2 == 0 ? " ২" : "")" target="_blank">
+                    <a href="https://wa.me/8801341629475?text=Hello%2C%20I%20want%20to%20know%20more%20about%20@(i == 1 || i == 2 ? "দীপ্ত নবম" : i == 3 || i == 4 ? "স্ফুরিত দশম" : i == 5 || i == 6 ? "প্রদীপ্ত একাদশ" : "বিকশিত দ্বাদশ")@(i % 2 == 0 ? " ২" : "")" target="_blank">
                         <img src="~/assets/images/Subject Wise 0@(i).webp" class="programImg">
                     </a>
                 </div>
@@ -534,7 +534,7 @@
                 @for (int i = 1; i <= 8; i++)
                 {
                     <div class="carousel-item @(i == 1 ? "active" : "")">
-                        <a href="https://wa.me/8801341629475?text=Hello%2C%20I%20want%20to%20know%20more%20about%20@(i == 1 || i == 2 ? "দিপ্ত নবম" : i == 3 || i == 4 ? "ইস্ফুরিত দশম" : i == 5 || i == 6 ? "প্রদিপ্ত একাদশ" : "বিকশিত দাদশ")@(i % 2 == 0 ? " ২" : "")" target="_blank">
+                        <a href="https://wa.me/8801341629475?text=Hello%2C%20I%20want%20to%20know%20more%20about%20@(i == 1 || i == 2 ? "দীপ্ত নবম" : i == 3 || i == 4 ? "স্ফুরিত দশম" : i == 5 || i == 6 ? "প্রদীপ্ত একাদশ" : "বিকশিত দ্বাদশ")@(i % 2 == 0 ? " ২" : "")" target="_blank">
                             <img src="~/assets/images/Subject Wise 0@(i).webp" class="programImg">
                         </a>
                     </div>
